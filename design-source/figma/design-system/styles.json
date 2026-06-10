@@ -1,0 +1,751 @@
+{
+ "text": [
+  {
+   "name": "Title/Flow Title",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 72,
+   "lineHeight": {
+    "unit": "AUTO"
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/5XL",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 64,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 110.00000238418579
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/4XL/Semibold",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 48,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/3XL/Medium",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 36,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/3XL/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 36,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/2XL/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 32,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/2XL/Medium",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 32,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/XL/Medium",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 24,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/XL/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 24,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/XL/CAPS",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 24,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/L/Caps",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 20,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/L/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 20,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/L/Medium",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 20,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/M/Semibold",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 16,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/M/Bold",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 16,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/S/Semibold",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 14,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/S/Bold",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 14,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/XS/Semibold",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 12,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Title/XS/Bold",
+   "family": "Bricolage Grotesque",
+   "style": "Bold",
+   "size": 12,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/L/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 16,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/M/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 14,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/M/Underlined",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 14,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/S/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 12,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/S/Underlined",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 12,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 129.99999523162842
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/S/Graph Legend",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 12,
+   "lineHeight": {
+    "unit": "PERCENT",
+    "value": 100
+   },
+   "letterSpacing": {
+    "unit": "PIXELS",
+    "value": 0
+   }
+  },
+  {
+   "name": "Body/XS/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 10,
+   "lineHeight": {
+    "unit": "AUTO"
+   },
+   "letterSpacing": {
+    "unit": "PERCENT",
+    "value": 2
+   }
+  },
+  {
+   "name": "Body/XS/Medium",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 10,
+   "lineHeight": {
+    "unit": "PIXELS",
+    "value": 16
+   },
+   "letterSpacing": {
+    "unit": "PERCENT",
+    "value": 2
+   }
+  },
+  {
+   "name": "Label/Medium",
+   "family": "Bricolage Grotesque",
+   "style": "SemiBold",
+   "size": 10,
+   "lineHeight": {
+    "unit": "AUTO"
+   },
+   "letterSpacing": {
+    "unit": "PERCENT",
+    "value": 15
+   }
+  },
+  {
+   "name": "Label/Regular",
+   "family": "Bricolage Grotesque",
+   "style": "Regular",
+   "size": 10,
+   "lineHeight": {
+    "unit": "AUTO"
+   },
+   "letterSpacing": {
+    "unit": "PERCENT",
+    "value": 14
+   }
+  }
+ ],
+ "effects": [
+  {
+   "name": "Shadow/Small",
+   "effects": [
+    {
+     "type": "DROP_SHADOW",
+     "visible": true,
+     "radius": 8,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.03999999910593033
+     },
+     "offset": {
+      "x": 0,
+      "y": 2
+     },
+     "spread": 0,
+     "blendMode": "NORMAL",
+     "showShadowBehindNode": true
+    }
+   ]
+  },
+  {
+   "name": "Shadow/Normal",
+   "effects": [
+    {
+     "type": "DROP_SHADOW",
+     "visible": true,
+     "radius": 16,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.07999999821186066
+     },
+     "offset": {
+      "x": 0,
+      "y": 4
+     },
+     "spread": 0,
+     "blendMode": "NORMAL",
+     "showShadowBehindNode": true
+    }
+   ]
+  },
+  {
+   "name": "Shadow / Big",
+   "effects": [
+    {
+     "type": "DROP_SHADOW",
+     "visible": true,
+     "radius": 24,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.07999999821186066
+     },
+     "offset": {
+      "x": 0,
+      "y": 8
+     },
+     "spread": 0,
+     "blendMode": "NORMAL",
+     "showShadowBehindNode": true
+    }
+   ]
+  },
+  {
+   "name": "Shadow / Dark",
+   "effects": [
+    {
+     "type": "DROP_SHADOW",
+     "visible": true,
+     "radius": 8,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.30000001192092896
+     },
+     "offset": {
+      "x": 0,
+      "y": 4
+     },
+     "spread": 0,
+     "blendMode": "NORMAL",
+     "showShadowBehindNode": true
+    }
+   ]
+  },
+  {
+   "name": "Shadow/Button Shadow",
+   "effects": [
+    {
+     "type": "DROP_SHADOW",
+     "visible": true,
+     "radius": 16,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.10000000149011612
+     },
+     "offset": {
+      "x": 0,
+      "y": 8
+     },
+     "spread": 0,
+     "blendMode": "NORMAL",
+     "showShadowBehindNode": true
+    }
+   ]
+  },
+  {
+   "name": "Blur/Layer Blur - 120",
+   "effects": [
+    {
+     "type": "LAYER_BLUR",
+     "visible": true,
+     "radius": 120,
+     "boundVariables": {},
+     "blurType": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Blur/Bg Blur - Small",
+   "effects": [
+    {
+     "type": "BACKGROUND_BLUR",
+     "visible": true,
+     "radius": 24,
+     "boundVariables": {},
+     "blurType": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Blur/Bg Blur - Medium",
+   "effects": [
+    {
+     "type": "BACKGROUND_BLUR",
+     "visible": true,
+     "radius": 64,
+     "boundVariables": {},
+     "blurType": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Blur/Bg Blur - Large",
+   "effects": [
+    {
+     "type": "BACKGROUND_BLUR",
+     "visible": true,
+     "radius": 120,
+     "boundVariables": {},
+     "blurType": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Border/Top",
+   "effects": [
+    {
+     "type": "INNER_SHADOW",
+     "visible": true,
+     "radius": 0,
+     "boundVariables": {},
+     "color": {
+      "r": 0.9607843160629272,
+      "g": 0.9607843160629272,
+      "b": 0.9607843160629272,
+      "a": 1
+     },
+     "offset": {
+      "x": 0,
+      "y": 1
+     },
+     "spread": 0,
+     "blendMode": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Border/Right",
+   "effects": [
+    {
+     "type": "INNER_SHADOW",
+     "visible": true,
+     "radius": 0,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.1599999964237213
+     },
+     "offset": {
+      "x": -1,
+      "y": 0
+     },
+     "spread": 0,
+     "blendMode": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Border/Left",
+   "effects": [
+    {
+     "type": "INNER_SHADOW",
+     "visible": true,
+     "radius": 0,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.1599999964237213
+     },
+     "offset": {
+      "x": 1,
+      "y": 0
+     },
+     "spread": 0,
+     "blendMode": "NORMAL"
+    }
+   ]
+  },
+  {
+   "name": "Border/Bottom",
+   "effects": [
+    {
+     "type": "INNER_SHADOW",
+     "visible": true,
+     "radius": 0,
+     "boundVariables": {},
+     "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.1599999964237213
+     },
+     "offset": {
+      "x": 0,
+      "y": -1
+     },
+     "spread": 0,
+     "blendMode": "NORMAL"
+    }
+   ]
+  }
+ ],
+ "paints": [
+  {
+   "name": "Gradient/Glass",
+   "paints": [
+    {
+     "type": "SOLID",
+     "color": "#ffffff",
+     "opacity": 0.30000001192092896
+    },
+    {
+     "type": "GRADIENT_LINEAR",
+     "opacity": 1
+    }
+   ]
+  },
+  {
+   "name": "Gradient/Linear Dark 1",
+   "paints": [
+    {
+     "type": "GRADIENT_LINEAR",
+     "opacity": 1
+    }
+   ]
+  },
+  {
+   "name": "Gradient/Radial Dark 1",
+   "paints": [
+    {
+     "type": "GRADIENT_RADIAL",
+     "opacity": 1
+    }
+   ]
+  },
+  {
+   "name": "Gradient/Blue",
+   "paints": [
+    {
+     "type": "GRADIENT_LINEAR",
+     "opacity": 1
+    }
+   ]
+  },
+  {
+   "name": "Gradient/Blue Hover",
+   "paints": [
+    {
+     "type": "GRADIENT_LINEAR",
+     "opacity": 1
+    }
+   ]
+  },
+  {
+   "name": "Image/Blur Logo Dark Bg",
+   "paints": [
+    {
+     "type": "SOLID",
+     "color": "#0b0223",
+     "opacity": 1
+    },
+    {
+     "type": "GRADIENT_RADIAL",
+     "opacity": 0.20000000298023224
+    },
+    {
+     "type": "GRADIENT_RADIAL",
+     "opacity": 0.20000000298023224
+    },
+    {
+     "type": "GRADIENT_RADIAL",
+     "opacity": 0.20000000298023224
+    }
+   ]
+  },
+  {
+   "name": "Image / Blur Logo Light Bg",
+   "paints": [
+    {
+     "type": "IMAGE",
+     "opacity": 1
+    }
+   ]
+  }
+ ]
+}

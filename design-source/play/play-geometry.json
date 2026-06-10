@@ -1,0 +1,230 @@
+{
+  "viewport": {
+    "w": 1440,
+    "h": 900
+  },
+  "adsHelp": {
+    "rect": {
+      "x": 846,
+      "y": 731,
+      "w": 178,
+      "h": 21
+    },
+    "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "border": "0px none rgba(255, 255, 255, 0.5)",
+      "gap": "normal",
+      "pad": "0px",
+      "fs": "14px",
+      "fw": "400",
+      "color": "rgba(255, 255, 255, 0.5)"
+    },
+    "text": "Ads help keep now.gg Free!"
+  },
+  "adColumn": null,
+  "ads": [
+    {
+      "tag": "div",
+      "id": "div-ad-app-page-leaderboard-container",
+      "rect": {
+        "x": 571,
+        "y": 696,
+        "w": 728,
+        "h": 90
+      },
+      "iab": "728x90"
+    },
+    {
+      "tag": "div",
+      "id": "div-ad-square-midroll-display-container",
+      "rect": {
+        "x": 4,
+        "y": 70,
+        "w": 336,
+        "h": 280
+      },
+      "iab": "336x280"
+    },
+    {
+      "tag": "div",
+      "id": "div-ad-square-midroll-display",
+      "rect": {
+        "x": 4,
+        "y": 85,
+        "w": 336,
+        "h": 250
+      },
+      "iab": null
+    },
+    {
+      "tag": "div",
+      "id": "google_ads_iframe_/22663423128/nowgg-dis",
+      "rect": {
+        "x": 4,
+        "y": 85,
+        "w": 336,
+        "h": 250
+      },
+      "iab": null
+    },
+    {
+      "tag": "iframe",
+      "id": "google_ads_iframe_/22663423128/nowgg-dis",
+      "rect": {
+        "x": 22,
+        "y": 85,
+        "w": 300,
+        "h": 250
+      },
+      "iab": "300x250"
+    },
+    {
+      "tag": "div",
+      "id": "div-ad-square-midroll-video-container",
+      "rect": {
+        "x": 4,
+        "y": 405,
+        "w": 336,
+        "h": 280
+      },
+      "iab": "336x280"
+    },
+    {
+      "tag": "div",
+      "id": "div-ad-square-midroll-video",
+      "rect": {
+        "x": 4,
+        "y": 420,
+        "w": 336,
+        "h": 250
+      },
+      "iab": null
+    },
+    {
+      "tag": "div",
+      "id": "google_ads_iframe_/22663423128/nowgg-dis",
+      "rect": {
+        "x": 4,
+        "y": 420,
+        "w": 336,
+        "h": 250
+      },
+      "iab": null
+    },
+    {
+      "tag": "iframe",
+      "id": "google_ads_iframe_/22663423128/nowgg-dis",
+      "rect": {
+        "x": 22,
+        "y": 420,
+        "w": 300,
+        "h": 250
+      },
+      "iab": "300x250"
+    }
+  ],
+  "rail": {
+    "count": 8,
+    "icon": {
+      "x": 350,
+      "y": 74,
+      "w": 70,
+      "h": 70
+    },
+    "iconStyle": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "gap": "normal",
+      "pad": "0px",
+      "fs": "10px",
+      "fw": "400",
+      "color": "rgb(255, 255, 255)"
+    },
+    "wrap": {
+      "rect": {
+        "x": 350,
+        "y": 74,
+        "w": 70,
+        "h": 70
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "radius": "4px",
+        "border": "0px none rgb(255, 255, 255)",
+        "gap": "normal",
+        "pad": "0px",
+        "fs": "10px",
+        "fw": "400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    "vGap": 12,
+    "colX": 350,
+    "colRight": 420
+  },
+  "hero": {
+    "rect": {
+      "x": 430,
+      "y": 64,
+      "w": 1010,
+      "h": 722
+    },
+    "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "gap": "normal",
+      "pad": "0px",
+      "fs": "10px",
+      "fw": "400",
+      "color": "rgb(255, 255, 255)"
+    },
+    "cls": "ciQTX0js5AsOQ5v6"
+  },
+  "popular": {
+    "heading": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "border": "0px none rgba(255, 255, 255, 0.9)",
+      "gap": "normal",
+      "pad": "0px",
+      "fs": "32px",
+      "fw": "600",
+      "color": "rgba(255, 255, 255, 0.9)"
+    },
+    "headingRect": {
+      "x": 0,
+      "y": 786,
+      "w": 1440,
+      "h": 54
+    },
+    "tile": {
+      "x": 12,
+      "y": 881,
+      "w": 136,
+      "h": 136
+    },
+    "tileStyle": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "radius": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "gap": "normal",
+      "pad": "0px",
+      "fs": "10px",
+      "fw": "400",
+      "color": "rgb(255, 255, 255)"
+    },
+    "hGap": -136,
+    "sectionX": 0,
+    "sectionW": 1440
+  },
+  "container": {
+    "x": 0,
+    "y": 786,
+    "w": 1440,
+    "h": 451
+  },
+  "scrollH": 4127
+}

@@ -1,0 +1,173 @@
+{
+  "before": {
+    "texts": {},
+    "icons": [
+      {
+        "tag": "i",
+        "cls": "sc-a9d1dfcf-0 jzhjsC icon-info ngg-info-icon",
+        "glyph": "\"\"",
+        "font": "icomoon",
+        "y": 19
+      },
+      {
+        "tag": "img",
+        "cls": "",
+        "src": "/6/_next/static/media/gradient-search.0a195319.svg",
+        "y": 24
+      },
+      {
+        "tag": "svg",
+        "cls": "[object SVGAnimatedString]",
+        "d": "M6.59638 1.39913C6.79613 1.12595 7.20387 1.12595 7.40362 1.39913L9.32199 4.02281C9.50713 4.27601 9.76698 4.4648 10.065 4.56263L13.1531 5.57636C13.4746 5.68191 13.6006 6.0697 13.4025 6.34408L11.5001 8.97933C11.3165 9.23365 11.2172 9.53912 11.2163 9.85278L11.2064 13.103C11.2054 13.4414 10.8755 13.6811 10.5534 13.5775L7.4592 12.5825C7.1606 12.4864 6.8394 12.4864 6.5408 12.5825L3.44664 13.5775C3.12447 13.6811 2.7946 13.4414 2.79357 13.103L2.78373 9.85278C2.78278 9.53912 2.68353 9.23364 2.49993 8.97933L0.597476 6.34408C0.399392 6.0697 0.525393 5.68191 0.846925 5.57636L3.935 4.56263C4.23302 4.4648 4.49287 4.27601 4.67801 4.02281L6.59638 1.39913Z",
+        "y": 354
+      },
+      {
+        "tag": "img",
+        "cls": "",
+        "src": "",
+        "y": 3711
+      },
+      {
+        "tag": "svg",
+        "cls": "[object SVGAnimatedString]",
+        "d": "M12.3536 6.11617C12.1583 5.92091 11.8417 5.92091 11.6464 6.11617L8 9.76262L4.35355 6.11617C4.15829 5.92091 3.84171 5.92091 3.64645 6.11617C3.45118 6.31143 3.45118 6.62802 3.64645 6.82328L7.64645 10.8233C7.84171 11.0185 8.15829 11.0185 8.35355 10.8233L12.3536 6.82328C12.5488 6.62802 12.5488 6.31144 12.3536 6.11617Z",
+        "y": 4088
+      },
+      {
+        "tag": "i",
+        "cls": "sc-a9d1dfcf-0 GMKbv icon-union undefined",
+        "glyph": "\"\"",
+        "font": "icomoon",
+        "y": 4383
+      }
+    ],
+    "bars": []
+  },
+  "after": {
+    "texts": {
+      "Remove Ads": {
+        "tag": "div",
+        "cls": "",
+        "html": "<div id=\"__next\"><div class=\"lcpImgWrapper full-wh\"><div class=\"lcpDiv\"></div><div style=\"width:100%;height:100%;background-image:url(/6/_next/static/media/black-bg.6fdd970d.jpg);background-size:cover;background-position:center;background-repeat:repeat\"></div></div><section class=\"StyledLayout\"><header class=\"sc-74ddd4db-0 gLZcnl\"><div class=\"sc-21ab0578-0 kEhSeA app-logo\"><a href=\"https://now.gg/",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900
+        }
+      },
+      "Refresh page": {
+        "tag": "div",
+        "cls": "",
+        "html": "<div id=\"__next\"><div class=\"lcpImgWrapper full-wh\"><div class=\"lcpDiv\"></div><div style=\"width:100%;height:100%;background-image:url(/6/_next/static/media/black-bg.6fdd970d.jpg);background-size:cover;background-position:center;background-repeat:repeat\"></div></div><section class=\"StyledLayout\"><header class=\"sc-74ddd4db-0 gLZcnl\"><div class=\"sc-21ab0578-0 kEhSeA app-logo\"><a href=\"https://now.gg/",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900
+        }
+      },
+      "Game not loading": {
+        "tag": "div",
+        "cls": "",
+        "html": "<div id=\"__next\"><div class=\"lcpImgWrapper full-wh\"><div class=\"lcpDiv\"></div><div style=\"width:100%;height:100%;background-image:url(/6/_next/static/media/black-bg.6fdd970d.jpg);background-size:cover;background-position:center;background-repeat:repeat\"></div></div><section class=\"StyledLayout\"><header class=\"sc-74ddd4db-0 gLZcnl\"><div class=\"sc-21ab0578-0 kEhSeA app-logo\"><a href=\"https://now.gg/",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900
+        }
+      },
+      "Game not loading?": {
+        "tag": "div",
+        "cls": "",
+        "html": "<div id=\"__next\"><div class=\"lcpImgWrapper full-wh\"><div class=\"lcpDiv\"></div><div style=\"width:100%;height:100%;background-image:url(/6/_next/static/media/black-bg.6fdd970d.jpg);background-size:cover;background-position:center;background-repeat:repeat\"></div></div><section class=\"StyledLayout\"><header class=\"sc-74ddd4db-0 gLZcnl\"><div class=\"sc-21ab0578-0 kEhSeA app-logo\"><a href=\"https://now.gg/",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900
+        }
+      }
+    },
+    "icons": [
+      {
+        "tag": "i",
+        "cls": "sc-a9d1dfcf-0 jzhjsC icon-info ngg-info-icon",
+        "glyph": "\"\"",
+        "font": "icomoon",
+        "y": 19
+      },
+      {
+        "tag": "img",
+        "cls": "",
+        "src": "/6/_next/static/media/gradient-search.0a195319.svg",
+        "y": 24
+      },
+      {
+        "tag": "img",
+        "cls": "sc-b6719765-0 cjAIgA",
+        "src": "https://cdn.now.gg/now-gg-store/501/com.nowgg.h5.pub501.app52097/52097/assets/en-US/1779273690/ChatGPT_Image_May_20,_202",
+        "y": 69
+      },
+      {
+        "tag": "i",
+        "cls": "sc-a9d1dfcf-0 jzhjsF icon-support undefined",
+        "glyph": "\"\"",
+        "font": "icomoon",
+        "y": 646
+      },
+      {
+        "tag": "img",
+        "cls": "",
+        "src": "/6/_next/static/media/premium-symbol.99799c38.webp",
+        "y": 652
+      },
+      {
+        "tag": "img",
+        "cls": "",
+        "src": "/6/_next/static/media/recorderImg.822cd89f.svg",
+        "y": 646
+      },
+      {
+        "tag": "i",
+        "cls": "sc-a9d1dfcf-0 jzhjsF icon-enter-fullscreen undefined",
+        "glyph": "\"\"",
+        "font": "icomoon",
+        "y": 646
+      },
+      {
+        "tag": "img",
+        "cls": "",
+        "src": "",
+        "y": 3711
+      },
+      {
+        "tag": "svg",
+        "cls": "[object SVGAnimatedString]",
+        "d": "M12.3536 6.11617C12.1583 5.92091 11.8417 5.92091 11.6464 6.11617L8 9.76262L4.35355 6.11617C4.15829 5.92091 3.84171 5.92091 3.64645 6.11617C3.45118 6.31143 3.45118 6.62802 3.64645 6.82328L7.64645 10.8233C7.84171 11.0185 8.15829 11.0185 8.35355 10.8233L12.3536 6.82328C12.5488 6.62802 12.5488 6.31144 12.3536 6.11617Z",
+        "y": 4088
+      },
+      {
+        "tag": "i",
+        "cls": "sc-a9d1dfcf-0 GMKbv icon-union undefined",
+        "glyph": "\"\"",
+        "font": "icomoon",
+        "y": 4383
+      }
+    ],
+    "bars": [
+      {
+        "cls": "sc-4bfffc2f-3 kvYHeU",
+        "rect": {
+          "x": 440,
+          "y": 638,
+          "w": 991,
+          "h": 40
+        },
+        "bg": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "html": "<div class=\"sc-4bfffc2f-3 kvYHeU\"><div class=\"sc-90a29998-7 goiiWU\"><button id=\"ng-support\" class=\"sc-90a29998-1 dauFpG\"><i size=\"25\" class=\"sc-a9d1dfcf-0 jzhjsF icon-support undefined\"></i></button><button class=\"sc-404ed2b-0 sc-70480f5a-1 cUATGy bFyrIj\"><img src=\"/6/_next/static/media/premium-symbol.99799c38.webp\" width=\"12\" alt=\"\"><h6 class=\"sc-3c372983-27 DeUzz\">Remove Ads</h6></button></div><div class=\"sc-3c372983-23 sc-4bfffc2f-8 fEwiqc jATOsI\">Game not loading? <button class=\"sc-404ed2b-0 bcsWrI\">Refresh page!</button></div><div class=\"sc-90a29998-7 goiiWU\"><div class=\"sc-90a29998-8 cpzVSH\"><button class=\"sc-90a29998-1 dauFpG record-screen\" id=\"ng-record-screen\"><div class=\"sc-dd60fb6a-1 bBeqrv\"><div class=\"sc-dd60fb6a-0 dmqaEa recordIcon\"><img alt=\"Record\" src=\"/6/_next/static/media/recorderImg.822cd89f.svg\"></div></div></button></div><div class=\"sc-90a29998-8 cpzVSH\"><button id=\"ng-fs\" class=\"sc-90a29998-1 dauFpG\"><i size=\"25\" class=\"sc-a9d1dfcf-0 jzhjsF icon-enter-fullscreen undefined\"></i></button></div></div></div>"
+      }
+    ]
+  }
+}

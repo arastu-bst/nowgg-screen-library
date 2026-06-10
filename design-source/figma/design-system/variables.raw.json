@@ -1,0 +1,1550 @@
+{
+ "collections": [
+  {
+   "id": "VariableCollectionId:11882:38212",
+   "name": ".Color Primitives",
+   "modes": [
+    {
+     "id": "11882:1",
+     "name": "Mode 1"
+    }
+   ],
+   "defaultModeId": "11882:1"
+  },
+  {
+   "id": "VariableCollectionId:11884:41890",
+   "name": "Colors",
+   "modes": [
+    {
+     "id": "11884:2",
+     "name": "Dark"
+    },
+    {
+     "id": "11886:0",
+     "name": "Light"
+    }
+   ],
+   "defaultModeId": "11884:2"
+  },
+  {
+   "id": "VariableCollectionId:11917:38749",
+   "name": "Spacings",
+   "modes": [
+    {
+     "id": "11917:1",
+     "name": "Mode 1"
+    }
+   ],
+   "defaultModeId": "11917:1"
+  },
+  {
+   "id": "VariableCollectionId:11920:38715",
+   "name": "Radius",
+   "modes": [
+    {
+     "id": "11920:0",
+     "name": "Mode 1"
+    }
+   ],
+   "defaultModeId": "11920:0"
+  },
+  {
+   "id": "VariableCollectionId:12064:1410",
+   "name": "Proto Variables",
+   "modes": [
+    {
+     "id": "12064:0",
+     "name": "Mode 1"
+    }
+   ],
+   "defaultModeId": "12064:0"
+  },
+  {
+   "id": "VariableCollectionId:14230:3240",
+   "name": "Forms",
+   "modes": [
+    {
+     "id": "14230:1",
+     "name": "Dark"
+    },
+    {
+     "id": "14230:2",
+     "name": "Light"
+    }
+   ],
+   "defaultModeId": "14230:1"
+  }
+ ],
+ "variables": [
+  {
+   "id": "VariableID:11882:38213",
+   "name": "Accent",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ff42a5"
+   }
+  },
+  {
+   "id": "VariableID:11882:38214",
+   "name": "Accent Hover",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ff3392"
+   }
+  },
+  {
+   "id": "VariableID:11882:38215",
+   "name": "Base - 900",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#0b0223"
+   }
+  },
+  {
+   "id": "VariableID:11882:38216",
+   "name": "Base - 800",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#1f1637"
+   }
+  },
+  {
+   "id": "VariableID:11882:38217",
+   "name": "Base - 700",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#332a4b"
+   }
+  },
+  {
+   "id": "VariableID:11882:38218",
+   "name": "Base - 600",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#473e5f"
+   }
+  },
+  {
+   "id": "VariableID:11882:38219",
+   "name": "Base - 500",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#5b5273"
+   }
+  },
+  {
+   "id": "VariableID:11882:38220",
+   "name": "Base - 400",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#797091"
+   }
+  },
+  {
+   "id": "VariableID:11882:38221",
+   "name": "Base - 300",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#8d84a5"
+   }
+  },
+  {
+   "id": "VariableID:11882:38222",
+   "name": "Base - 200",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#a198b9"
+   }
+  },
+  {
+   "id": "VariableID:11882:38223",
+   "name": "Base - 100",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#b5accd"
+   }
+  },
+  {
+   "id": "VariableID:11882:38224",
+   "name": "Base - 50",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#e3dfec"
+   }
+  },
+  {
+   "id": "VariableID:11882:38227",
+   "name": "White",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff"
+   }
+  },
+  {
+   "id": "VariableID:11882:38228",
+   "name": "Black",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#000000"
+   }
+  },
+  {
+   "id": "VariableID:11882:38229",
+   "name": "Purple",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#4c4789"
+   }
+  },
+  {
+   "id": "VariableID:11882:38230",
+   "name": "Blue 1",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#51a5c9"
+   }
+  },
+  {
+   "id": "VariableID:11882:38231",
+   "name": "Dark Green",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#398b4d"
+   }
+  },
+  {
+   "id": "VariableID:11882:38232",
+   "name": "Light Green",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#b3d661"
+   }
+  },
+  {
+   "id": "VariableID:11882:38233",
+   "name": "Red 1",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#de5a48"
+   }
+  },
+  {
+   "id": "VariableID:11882:38234",
+   "name": "Red 2",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#f33621"
+   }
+  },
+  {
+   "id": "VariableID:11882:38235",
+   "name": "Blue 2",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#0397eb"
+   }
+  },
+  {
+   "id": "VariableID:11882:38236",
+   "name": "Pale",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#eee3d9"
+   }
+  },
+  {
+   "id": "VariableID:11882:38237",
+   "name": "Yellow",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffc32a"
+   }
+  },
+  {
+   "id": "VariableID:11882:38238",
+   "name": "Teal",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#67c3bb"
+   }
+  },
+  {
+   "id": "VariableID:11882:38239",
+   "name": "Black-90",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#000000e5"
+   }
+  },
+  {
+   "id": "VariableID:11882:38240",
+   "name": "Black-80",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#000000cc"
+   }
+  },
+  {
+   "id": "VariableID:11882:38241",
+   "name": "Black-70",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#000000b2"
+   }
+  },
+  {
+   "id": "VariableID:11882:38242",
+   "name": "Black-60",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#00000099"
+   }
+  },
+  {
+   "id": "VariableID:11882:38243",
+   "name": "Black-50",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#00000080"
+   }
+  },
+  {
+   "id": "VariableID:11882:38244",
+   "name": "Black-40",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#00000066"
+   }
+  },
+  {
+   "id": "VariableID:11882:38245",
+   "name": "Black-30",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#0000004d"
+   }
+  },
+  {
+   "id": "VariableID:11882:38246",
+   "name": "Black-20",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#00000033"
+   }
+  },
+  {
+   "id": "VariableID:11882:38247",
+   "name": "Black-10",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#0000001a"
+   }
+  },
+  {
+   "id": "VariableID:11882:38248",
+   "name": "White-90",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffffe5"
+   }
+  },
+  {
+   "id": "VariableID:11882:38249",
+   "name": "White-80",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffffcc"
+   }
+  },
+  {
+   "id": "VariableID:11882:38250",
+   "name": "White-70",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffffb2"
+   }
+  },
+  {
+   "id": "VariableID:11882:38251",
+   "name": "White-60",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff99"
+   }
+  },
+  {
+   "id": "VariableID:11882:38252",
+   "name": "White-50",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff80"
+   }
+  },
+  {
+   "id": "VariableID:11882:38253",
+   "name": "White-40",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff66"
+   }
+  },
+  {
+   "id": "VariableID:11882:38254",
+   "name": "White-30",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff4d"
+   }
+  },
+  {
+   "id": "VariableID:11882:38255",
+   "name": "White-20",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff33"
+   }
+  },
+  {
+   "id": "VariableID:11882:38256",
+   "name": "White-10",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#ffffff1a"
+   }
+  },
+  {
+   "id": "VariableID:11882:38257",
+   "name": "Card bg",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#f5f5f5"
+   }
+  },
+  {
+   "id": "VariableID:11884:41891",
+   "name": "Text/Title",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38227"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38215"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11886:38662",
+   "name": "Text/Subtitle",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38249"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38217"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11886:38663",
+   "name": "Text/Body",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38250"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38218"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11886:38666",
+   "name": "Popup/Bg",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11917:38735"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38241"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11886:38667",
+   "name": "Popup/Border",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38256"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38256"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11886:38668",
+   "name": "Button/Bg",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38213"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38213"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11886:38669",
+   "name": "Button/Bg Hover",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38214"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38214"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11906:38718",
+   "name": "Neutral/White",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": "#ffffff",
+    "11886:0": "#ffffff"
+   }
+  },
+  {
+   "id": "VariableID:11906:38719",
+   "name": "Neutral/Black",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": "#000000",
+    "11886:0": "#000000"
+   }
+  },
+  {
+   "id": "VariableID:11913:38708",
+   "name": "Status/Alert",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38233"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38233"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38709",
+   "name": "Status/Error",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38234"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38234"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38710",
+   "name": "Button/Link",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38235"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38235"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38711",
+   "name": "Status/Idle",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38235"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38235"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38712",
+   "name": "Status/Success",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38238"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38238"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38713",
+   "name": "Logo/Purple",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38229"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38229"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38714",
+   "name": "Logo/Blue",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38230"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38230"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38715",
+   "name": "Logo/Dark Green",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38231"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38231"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11913:38716",
+   "name": "Logo/Light Green",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38232"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38232"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38731",
+   "name": "Translucents Dark/90%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38239"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38239"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38732",
+   "name": "Translucents Dark/80%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38240"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38240"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38733",
+   "name": "Translucents Dark/70%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38241"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38241"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38734",
+   "name": "Translucents Dark/60%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38242"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38242"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38735",
+   "name": "Translucents Dark/50%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38243"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38243"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38736",
+   "name": "Translucents Dark/40%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38244"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38244"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38737",
+   "name": "Translucents Dark/30%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38245"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38245"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38738",
+   "name": "Translucents Dark/20%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38246"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38246"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38739",
+   "name": "Translucents Dark/10%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38247"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38247"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38740",
+   "name": "Translucents Light/90%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38248"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38248"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38741",
+   "name": "Translucents Light/80%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38249"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38249"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38742",
+   "name": "Translucents Light/70%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38250"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38250"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38743",
+   "name": "Translucents Light/60%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38251"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38251"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38744",
+   "name": "Translucents Light/50%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38252"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38252"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38745",
+   "name": "Translucents Light/40%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38253"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38253"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38746",
+   "name": "Translucents Light/30%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38254"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38254"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38747",
+   "name": "Translucents Light/20%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38255"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38255"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38748",
+   "name": "Translucents Light/10%",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38256"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38256"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11917:38750",
+   "name": "s",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 12
+   }
+  },
+  {
+   "id": "VariableID:11917:38751",
+   "name": "m",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 16
+   }
+  },
+  {
+   "id": "VariableID:11920:38708",
+   "name": "xs",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 8
+   }
+  },
+  {
+   "id": "VariableID:11920:38709",
+   "name": "xxs",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 4
+   }
+  },
+  {
+   "id": "VariableID:11920:38710",
+   "name": "l",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 20
+   }
+  },
+  {
+   "id": "VariableID:11920:38711",
+   "name": "xl",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 24
+   }
+  },
+  {
+   "id": "VariableID:11920:38712",
+   "name": "xxl",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 32
+   }
+  },
+  {
+   "id": "VariableID:11920:38713",
+   "name": "xxxl",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 40
+   }
+  },
+  {
+   "id": "VariableID:11920:38714",
+   "name": "xxxs",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11917:38749",
+   "valuesByMode": {
+    "11917:1": 2
+   }
+  },
+  {
+   "id": "VariableID:11920:38716",
+   "name": "s",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 6
+   }
+  },
+  {
+   "id": "VariableID:11920:38717",
+   "name": "m",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 8
+   }
+  },
+  {
+   "id": "VariableID:11920:38718",
+   "name": "l",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 10
+   }
+  },
+  {
+   "id": "VariableID:11920:38719",
+   "name": "xl",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 12
+   }
+  },
+  {
+   "id": "VariableID:11920:38720",
+   "name": "xs",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 4
+   }
+  },
+  {
+   "id": "VariableID:11920:38721",
+   "name": "xxl",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 16
+   }
+  },
+  {
+   "id": "VariableID:11920:38722",
+   "name": "xxs",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:11920:38715",
+   "valuesByMode": {
+    "11920:0": 2
+   }
+  },
+  {
+   "id": "VariableID:11988:38719",
+   "name": "Base/900",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38215"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38215"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38720",
+   "name": "Base/800",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38216"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38216"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38721",
+   "name": "Base/700",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38217"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38217"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38722",
+   "name": "Base/600",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38218"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38218"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38723",
+   "name": "Base/500",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38219"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38219"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38724",
+   "name": "Base/400",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38220"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38220"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38725",
+   "name": "Base/300",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38221"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38221"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38726",
+   "name": "Base/200",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38222"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38222"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38727",
+   "name": "Base/100",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38223"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38223"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11988:38728",
+   "name": "Base/50",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38224"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38224"
+    }
+   }
+  },
+  {
+   "id": "VariableID:11989:38730",
+   "name": "Status/Warning",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38237"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38237"
+    }
+   }
+  },
+  {
+   "id": "VariableID:12064:1411",
+   "name": "Like",
+   "type": "FLOAT",
+   "collectionId": "VariableCollectionId:12064:1410",
+   "valuesByMode": {
+    "12064:0": 0
+   }
+  },
+  {
+   "id": "VariableID:12064:1412",
+   "name": "Liked",
+   "type": "BOOLEAN",
+   "collectionId": "VariableCollectionId:12064:1410",
+   "valuesByMode": {
+    "12064:0": false
+   }
+  },
+  {
+   "id": "VariableID:12064:1413",
+   "name": "Disliked",
+   "type": "BOOLEAN",
+   "collectionId": "VariableCollectionId:12064:1410",
+   "valuesByMode": {
+    "12064:0": false
+   }
+  },
+  {
+   "id": "VariableID:12064:1414",
+   "name": "Loved",
+   "type": "BOOLEAN",
+   "collectionId": "VariableCollectionId:12064:1410",
+   "valuesByMode": {
+    "12064:0": false
+   }
+  },
+  {
+   "id": "VariableID:12064:1415",
+   "name": "Like_Default",
+   "type": "BOOLEAN",
+   "collectionId": "VariableCollectionId:12064:1410",
+   "valuesByMode": {
+    "12064:0": true
+   }
+  },
+  {
+   "id": "VariableID:12158:2366",
+   "name": "Popup/Close Icon",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:11882:38250"
+    },
+    "11886:0": {
+     "alias": "VariableID:11882:38250"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3241",
+   "name": "Input Default Bg",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38738"
+    },
+    "14230:2": {
+     "alias": "VariableID:11882:38227"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3850",
+   "name": "Input Default Border",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38744"
+    },
+    "14230:2": {
+     "alias": "VariableID:11917:38739"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3851",
+   "name": "Input Error Border",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11913:38708"
+    },
+    "14230:2": {
+     "alias": "VariableID:11913:38708"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3852",
+   "name": "Input Hover Border",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38742"
+    },
+    "14230:2": {
+     "alias": "VariableID:11917:38736"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3853",
+   "name": "Input Focus Border",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11882:38213"
+    },
+    "14230:2": {
+     "alias": "VariableID:11882:38213"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3854",
+   "name": "Input Default Font Color",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38746"
+    },
+    "14230:2": {
+     "alias": "VariableID:11917:38737"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3855",
+   "name": "Input Filled Font Color",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11906:38718"
+    },
+    "14230:2": {
+     "alias": "VariableID:11906:38719"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3856",
+   "name": "Input Disabled Font Color",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38742"
+    },
+    "14230:2": {
+     "alias": "VariableID:11917:38733"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:3857",
+   "name": "Input Disabled Bg",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38747"
+    },
+    "14230:2": {
+     "alias": "VariableID:11917:38738"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14230:4047",
+   "name": "Input Label Font Color",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38741"
+    },
+    "14230:2": {
+     "alias": "VariableID:11917:38732"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14243:982",
+   "name": "Accent-Dark",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#c20568"
+   }
+  },
+  {
+   "id": "VariableID:14243:983",
+   "name": "Accent-Dark-Hover",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11882:38212",
+   "valuesByMode": {
+    "11882:1": "#e31776"
+   }
+  },
+  {
+   "id": "VariableID:14243:984",
+   "name": "Button/Dark",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:14243:982"
+    },
+    "11886:0": {
+     "alias": "VariableID:14243:982"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14243:985",
+   "name": "Button/Dark Hover",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": {
+     "alias": "VariableID:14243:983"
+    },
+    "11886:0": {
+     "alias": "VariableID:14243:983"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14245:1672",
+   "name": "Form Bg",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:14230:3240",
+   "valuesByMode": {
+    "14230:1": {
+     "alias": "VariableID:11917:38748"
+    },
+    "14230:2": {
+     "alias": "VariableID:11906:38718"
+    }
+   }
+  },
+  {
+   "id": "VariableID:14408:973",
+   "name": "Gradient/Purple",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": "#7b4cff",
+    "11886:0": "#7b4cff"
+   }
+  },
+  {
+   "id": "VariableID:14408:974",
+   "name": "Gradient/Blue",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": "#0ea4c5",
+    "11886:0": "#0ea4c5"
+   }
+  },
+  {
+   "id": "VariableID:14844:1811",
+   "name": "Button/Disabled",
+   "type": "COLOR",
+   "collectionId": "VariableCollectionId:11884:41890",
+   "valuesByMode": {
+    "11884:2": "#565656",
+    "11886:0": "#565656"
+   }
+  }
+ ]
+}

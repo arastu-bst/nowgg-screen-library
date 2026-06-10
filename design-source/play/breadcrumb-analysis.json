@@ -1,0 +1,151 @@
+{
+  "trailHtml": "<ul class=\"T0w3sq3BDE1MciAN\"><li class=\"Le6V0p1txbgPpAt6\"></li><li class=\"Le6V0p1txbgPpAt6\"><a class=\"zCfvVOwD20HdF9XE\" href=\"https://now.gg/?ng_uaId=ua-gvL05HL4jElY0mIYGu7Rw&amp;ng_uaSessionId=uasess-YNQKMQPHwoMkeyYvcp01n&amp;ng_visitId=visitid-4HkUqUBqN30OYh3PL37Ea&amp;ng_ngReferrer=NA&amp;ng_ngEntryPoint=https%253A%252F%252Fnow.gg%252Fapps%252Frecloak%252F52097%252Flittle-alchemy-2.html&amp;ng_utmSource=&amp;ng_utmMedium=&amp;ng_utmCampaign=&amp;ng_ntmSource=NA&amp;ng_userSource=direct&amp;ng_userCampaign=&amp;ng_userAcqVar=NA_2026_JUN_04_PDT\"><span>Home</span><svg width=\"16\" height=\"17\" vi",
+  "chain": [
+    {
+      "tag": "UL",
+      "cls": "T0w3sq3BDE1MciAN",
+      "rect": {
+        "x": 0,
+        "yV": 0,
+        "w": 0,
+        "h": 0
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(255, 255, 255)",
+        "bBottom": "0px none rgba(255, 255, 255, 0.1)",
+        "pad": "0px 0px 24px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "container",
+      "rect": {
+        "x": 20,
+        "yV": 4087,
+        "w": 1400,
+        "h": 396
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(255, 255, 255)",
+        "bBottom": "0px none rgb(255, 255, 255)",
+        "pad": "0px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "FOOTER",
+      "cls": "footer Footer",
+      "rect": {
+        "x": 0,
+        "yV": 4047,
+        "w": 1440,
+        "h": 80
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(255, 255, 255)",
+        "bBottom": "0px none rgb(255, 255, 255)",
+        "pad": "40px 20px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "xES0bjZoI7ksV3Oz",
+      "rect": {
+        "x": 0,
+        "yV": 786,
+        "w": 1440,
+        "h": 3341
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(255, 255, 255)",
+        "bBottom": "0px none rgb(255, 255, 255)",
+        "pad": "0px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "yV": 64,
+        "w": 1440,
+        "h": 4063
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(255, 255, 255)",
+        "bBottom": "0px none rgb(255, 255, 255)",
+        "pad": "0px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "SECTION",
+      "cls": "StyledLayout",
+      "rect": {
+        "x": 0,
+        "yV": 0,
+        "w": 1440,
+        "h": 4127
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(255, 255, 255)",
+        "bBottom": "0px none rgb(255, 255, 255)",
+        "pad": "0px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "yV": 0,
+        "w": 1440,
+        "h": 1200
+      },
+      "style": {
+        "bg": "rgba(0, 0, 0, 0)",
+        "bTop": "0px none rgb(0, 0, 0)",
+        "bBottom": "0px none rgb(0, 0, 0)",
+        "pad": "0px",
+        "mar": "0px",
+        "font": "10px/400",
+        "color": "rgb(0, 0, 0)"
+      }
+    }
+  ],
+  "footer": {
+    "tag": "FOOTER",
+    "cls": "footer Footer",
+    "rect": {
+      "yV": 4047,
+      "h": 80
+    },
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "40px 20px"
+  },
+  "insideFooter": true,
+  "gapViewport": -82,
+  "trailViewportY": 4087
+}

@@ -1,0 +1,915 @@
+{
+  "url": "https://now.gg/apps/scott-cawthon/51750/five-nights-at-freddy-s.html",
+  "title": "Play Five Nights at Freddy's Online for Free on PC & Mobile | now.gg",
+  "rootVars": {
+    "--grid-vertical-item-margin": "16px",
+    "--tude-video-controls-close-transform": "none",
+    "--tude-video-controls-icon-size": "13px",
+    "--tude-video-controls-progress-color": "rgb(9 150 9)",
+    "--toastify-color-progress-dark": "#bb86fc",
+    "--toastify-color-warning": "#f1c40f",
+    "--toastify-icon-color-success": "#07bc0c",
+    "--color-accent": "#ff42a5",
+    "--tude-video-bg": "rgba(0, 0, 0, 0.025)",
+    "--toastify-toast-min-height": "64px",
+    "--vh": "8.44px",
+    "--tude-video-controlbar-padding-bottom": "10px",
+    "--toastify-spinner-color": "#616161",
+    "--toastify-color-progress-warning": "#f1c40f",
+    "--toastify-color-light": "#fff",
+    "--tude-video-controls-mute-icon": "url(\"data:image/svg+xml;utf8,<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 512 512\\\"><path style=\\\"fill:none;stroke:black;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px\\\" d=\\\"M416 432 64 80\\\"/><path d=\\\"M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71Zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3ZM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256Zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256Z\\\"/><path d=\\\"M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256Z\\\"/></svg>\")",
+    "--tude-video-controls-icon-padding": "4px",
+    "--toastify-text-color-success": "#fff",
+    "--toastify-toast-width": "320px",
+    "--toastify-z-index": "9999",
+    "--toastify-text-color-error": "#fff",
+    "--toastify-color-info": "#3498db",
+    "--toastify-color-success": "#07bc0c",
+    "--tude-video-controls-icon-color": "white",
+    "--tude-video-controls-play-icon": "url(\"data:image/svg+xml;utf8,<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 512 512\\\"><path d=\\\"M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z\\\"/></svg>\")",
+    "--tude-video-controls-icon-border-radius": "100px",
+    "--toastify-text-color-dark": "#fff",
+    "--tude-video-controls-icon-spacing": "4px",
+    "--toastify-color-progress-light": "linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55)",
+    "--toastify-color-error": "#e74c3c",
+    "--tude-video-controls-progress-bg": "rgba(255, 255, 255, .2)",
+    "--tude-video-controls-unmute-icon": "url(\"data:image/svg+xml;utf8,<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 512 512\\\"><path d=\\\"M232,416a23.88,23.88,0,0,1-14.2-4.68,8.27,8.27,0,0,1-.66-.51L125.76,336H56a24,24,0,0,1-24-24V200a24,24,0,0,1,24-24h69.75l91.37-74.81a8.27,8.27,0,0,1,.66-.51A24,24,0,0,1,256,120V392a24,24,0,0,1-24,24ZM125.82,336Zm-.27-159.86Z\\\"/><path d=\\\"M320,336a16,16,0,0,1-14.29-23.19c9.49-18.87,14.3-38,14.3-56.81,0-19.38-4.66-37.94-14.25-56.73a16,16,0,0,1,28.5-14.54C346.19,208.12,352,231.44,352,256c0,23.86-6,47.81-17.7,71.19A16,16,0,0,1,320,336Z\\\"/><path d=\\\"M368,384a16,16,0,0,1-13.86-24C373.05,327.09,384,299.51,384,256c0-44.17-10.93-71.56-29.82-103.94a16,16,0,0,1,27.64-16.12C402.92,172.11,416,204.81,416,256c0,50.43-13.06,83.29-34.13,120A16,16,0,0,1,368,384Z\\\"/><path d=\\\"M416,432a16,16,0,0,1-13.39-24.74C429.85,365.47,448,323.76,448,256c0-66.5-18.18-108.62-45.49-151.39a16,16,0,1,1,27-17.22C459.81,134.89,480,181.74,480,256c0,64.75-14.66,113.63-50.6,168.74A16,16,0,0,1,416,432Z\\\"/></svg>\")",
+    "--grid-vertical-items-per-row": "2",
+    "--tude-video-border-radius": "9px",
+    "--tude-video-controls-pause-icon": "url(\"data:image/svg+xml;utf8,<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 256 256\\\"><path d=\\\"M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z\\\"/></svg>\")",
+    "--toastify-text-color-warning": "#fff",
+    "--toastify-toast-background": "#fff",
+    "--toastify-icon-color-error": "#e74c3c",
+    "--toastify-toast-max-height": "800px",
+    "--tude-video-controls-close-inset": "auto 10px 10px auto",
+    "--toastify-color-transparent": "rgba(255,255,255,0.7)",
+    "--tude-video-controls-icon-bg": "rgba(0, 0, 0, .8)",
+    "--tude-vh": "8.44px",
+    "--tude-anchor-close-icon": "url(\"data:image/svg+xml;utf8,<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 512 512\\\"><path d=\\\"M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z\\\"/></svg>\")",
+    "--toastify-icon-color-info": "#3498db",
+    "--toastify-color-progress-error": "#e74c3c",
+    "--toastify-font-family": "sans-serif",
+    "--tude-video-controlbar-padding": "10px",
+    "--toastify-text-color-light": "#757575",
+    "--tude-video-controls-close-icon": "url(\"data:image/svg+xml;utf8,<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" viewBox=\\\"0 0 512 512\\\"><path d=\\\"M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z\\\"/></svg>\")",
+    "--grid-items-per-row": "3",
+    "--toastify-text-color-info": "#fff",
+    "--toastify-icon-color-warning": "#f1c40f",
+    "--toastify-color-progress-info": "#3498db",
+    "--toastify-spinner-color-empty-area": "#e0e0e0",
+    "--toastify-color-dark": "#121212",
+    "--toastify-color-progress-success": "#07bc0c",
+    "--grid-item-margin": "8px",
+    "--vw": "3.9px"
+  },
+  "colors": {
+    "rgb(0, 0, 0)": 10,
+    "rgb(255, 255, 255)": 453,
+    "rgba(255, 255, 255, 0.8)": 25,
+    "rgba(255, 255, 255, 0.5)": 4,
+    "rgba(255, 255, 255, 0.7)": 7,
+    "rgba(255, 255, 255, 0.9)": 11,
+    "rgb(255, 66, 165)": 3,
+    "rgba(255, 255, 255, 0.4)": 7,
+    "rgba(255, 255, 255, 0.6)": 4
+  },
+  "bgColors": {
+    "rgb(17, 17, 17)": 1,
+    "rgb(13, 12, 20)": 1,
+    "rgba(255, 255, 255, 0.1)": 24,
+    "rgb(255, 66, 165)": 1,
+    "rgba(11, 2, 35, 0.5)": 8,
+    "rgba(17, 17, 17, 0.7)": 1,
+    "rgba(0, 0, 0, 0.5)": 5,
+    "rgba(255, 255, 255, 0.05)": 12
+  },
+  "borderColors": {
+    "rgba(255, 255, 255, 0.8)": 1,
+    "rgba(255, 255, 255, 0.2)": 1,
+    "rgba(0, 0, 0, 0)": 30,
+    "rgb(255, 66, 165)": 8,
+    "rgba(255, 255, 255, 0.1)": 1
+  },
+  "fontFamilies": {
+    "\"Times New Roman\"": 1,
+    "\"Bricolage Grotesque\", sans-serif": 509,
+    "icomoon": 2,
+    "\"Bricolage Grotesque\"": 11,
+    "Arial": 1
+  },
+  "fontSizes": {
+    "10px": 371,
+    "15px": 1,
+    "24px": 2,
+    "14px": 97,
+    "16px": 1,
+    "12px": 41,
+    "20px": 10,
+    "9px": 1
+  },
+  "fontWeights": {
+    "400": 464,
+    "500": 9,
+    "600": 51
+  },
+  "lineHeights": {
+    "normal": 394,
+    "15px": 1,
+    "36px": 2,
+    "21px": 73,
+    "16px": 4,
+    "24px": 1,
+    "18px": 37,
+    "30px": 10,
+    "12px": 1,
+    "9px": 1
+  },
+  "letterSpacings": {
+    "0.2px": 4,
+    "0.5px": 1,
+    "1.5px": 5
+  },
+  "radii": {
+    "50%": 4,
+    "120px": 1,
+    "12px": 26,
+    "24px": 5,
+    "4px": 16,
+    "8px": 60,
+    "6px": 3
+  },
+  "shadows": {
+    "rgba(0, 0, 0, 0.2) 0px 4px 4px 0px": 4,
+    "rgba(0, 0, 0, 0.08) 0px 4px 16px 0px": 24
+  },
+  "paddings": {
+    "0px 16px": 1,
+    "5px": 1,
+    "10px": 2,
+    "0px 20px": 3,
+    "0px 24px 0px 0px": 2,
+    "4px 12px": 4,
+    "16px": 13,
+    "12px 16px 24px": 1,
+    "1px 6px": 1,
+    "6px 0px 0px": 1,
+    "0px 0px 6px": 5,
+    "1px 0px 0px": 2,
+    "8px": 16,
+    "6px 15.2344px": 1,
+    "48px 32px": 1,
+    "24px 20px 32px": 1,
+    "7px 16px": 3,
+    "0px 0px 15px": 1,
+    "4px 8px": 15,
+    "20px": 1,
+    "0px 0px 24px": 1,
+    "24px 0px 0px": 1
+  },
+  "gaps": {
+    "12px": 25,
+    "8px": 3,
+    "16px": 13,
+    "4px": 20,
+    "40px": 1,
+    "32px": 3,
+    "24px": 2,
+    "26px": 2,
+    "10px": 1,
+    "6px": 15,
+    "32px normal": 1,
+    "12px 24px": 2
+  },
+  "fonts": [
+    "icomoon normal normal",
+    "Bricolage Grotesque 200 800 normal",
+    "Bricolage Grotesque 200 800 normal",
+    "Bricolage Grotesque 200 800 normal"
+  ],
+  "images": [
+    {
+      "src": "https://now.gg/6/_next/static/media/nowgg-logo.2eda3eaf.svg",
+      "alt": "now.gg Logo",
+      "w": 165,
+      "h": 50
+    },
+    {
+      "src": "https://now.gg/6/_next/static/media/gradient-search.0a195319.svg",
+      "alt": "search",
+      "w": 17,
+      "h": 16
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fcom.nowgg.h5.pub501.app51750%252Ficon%252Ffive-nights-at-freddy-s.png%26w%3D256%26q%3D80&w=640&q=70",
+      "alt": "Play Five Nights at Freddy's Online",
+      "w": 156,
+      "h": 156
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fnow-gg-store%2F501%2Fcom.nowgg.h5.pub501.app52095%2F52095%2Fassets%2Fen-US%2F1779115952%2FChatGPT_Image_May_18%2C_2026%2C_08_21_59_PM.png&w=128&q=80",
+      "alt": "World Guessr",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F19910%2Ficon%2Fupdate-65-anime-rang.png&w=128&q=80",
+      "alt": "Update 65 Anime Rangers X",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F19907%2Ficon%2Fupd-fish-it.png&w=128&q=80",
+      "alt": "UPD Fish It",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub474.app50005%2Ficon%2Fdrift-boss.png&w=128&q=80",
+      "alt": "Drift Boss",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F19914%2Ficon%2Fevad.png&w=128&q=80",
+      "alt": "Evad",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F19903%2Ficon%2FGrow-a-Garden.png&w=128&q=80",
+      "alt": "Grow a Garden",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F19909%2Ficon%2Fslasher-forsaken.png&w=128&q=80",
+      "alt": "Slasher Forsaken",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub565.app51367%2Ficon%2Fludo-classic-a-dice-game.png&w=128&q=80",
+      "alt": "Ludo classic : a dice game",
+      "w": 128,
+      "h": 128
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fnow-gg-store%2F501%2Fcom.nowgg.h5.pub501.app52100%2F52100%2Fassets%2Fen-US%2F1779373288%2FChatGPT_Image_May_21%2C_2026%2C_07_48_52_PM.png&w=64&q=90",
+      "alt": "Play Rally Racer Dirt online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub511.app51240%2Ficon%2Fbloxd-io.png&w=64&q=90",
+      "alt": "Play bloxd.io online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F10386%2Ficon%2Fpolybuzz.png&w=64&q=90",
+      "alt": "Play PolyBuzz online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub474.app50009%2Ficon%2Fludo-hero.png&w=64&q=90",
+      "alt": "Play Ludo Hero online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fnow-gg-store%2F501%2Fcom.nowgg.h5.pub501.app52095%2F52095%2Fassets%2Fen-US%2F1779115952%2FChatGPT_Image_May_18%2C_2026%2C_08_21_59_PM.png&w=64&q=90",
+      "alt": "Play World Guessr online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.pazugames.avatarworld%2Ficon%2Favatar-world-city-life.png&w=64&q=90",
+      "alt": "Play Avatar World: City Life online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fnow-gg-store%2F501%2Fcom.nowgg.h5.pub501.app52097%2F52097%2Fassets%2Fen-US%2F1779273690%2FChatGPT_Image_May_20%2C_2026%2C_04_10_34_PM.png&w=64&q=90",
+      "alt": "Play Little Alchemy 2 online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51750%2Ficon%2Ffive-nights-at-freddy-s.png&w=64&q=90",
+      "alt": "Play Five Nights at Freddy's online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&w=256&q=80",
+      "alt": "Play Smash Karts online on now.gg",
+      "w": 256,
+      "h": 344
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&w=256&q=80",
+      "alt": "Play Gacha Life 2 online on now.gg",
+      "w": 256,
+      "h": 344
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&w=256&q=80",
+      "alt": "Play ArmedForces.io online on now.gg",
+      "w": 256,
+      "h": 344
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/03/video-game-2.png",
+      "alt": "No Downloads. No Installs. Play games INSTANTLY on now.gg | now.gg",
+      "w": 212,
+      "h": 270
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/03/video-game-3.png",
+      "alt": "Did you score? #unblockedgames #school | now.gg",
+      "w": 212,
+      "h": 270
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "Play Instantly on now.gg | now.gg",
+      "w": 1,
+      "h": 1
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "Breaking game records like OG😎 | now.gg",
+      "w": 1,
+      "h": 1
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "Busted gaming on school laptop, but you are still lit🔥😎 | now.gg",
+      "w": 1,
+      "h": 1
+    },
+    {
+      "src": "https://cdn.now.gg/nowgg-static/icons/arrow.svg",
+      "alt": "Left arrow",
+      "w": 16,
+      "h": 29
+    },
+    {
+      "src": "https://cdn.now.gg/nowgg-static/icons/arrow.svg",
+      "alt": "Right arrow",
+      "w": 16,
+      "h": 29
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2026%2F01%2FChatGPT-Image-Jan-14-2026-01_21_27-PM-768x512.png&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 427
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2025%2F09%2FThumbnail_20250421014221104.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 427
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F11%2FWestSP_Cloud_EN_Banner-768x432.png&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 360
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F11%2FWestSP_Beginner_EN_Banner-768x432.png&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 360
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F11%2FWestSP_TipsTricks_EN_Banner-768x432.png&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 360
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2023%2F12%2F64-Blade-Ball-768x362.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 302
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F05%2F213-Basketball-games_NBA-games-768x384.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 320
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F07%2F391-The-Best-Family-Games-Online-Top-Picks-for-Fun-and-Togetherness--768x384.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 320
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F05%2F214-Crossword-puzzles-games-768x384.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 320
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F07%2F382-Top-Gaming-Categories-on-now.gg_-768x384.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 320
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F02%2F160-Gun-Games-768x384.jpg&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 320
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcms-cdn.now.gg%2Fcms-media%2F2024%2F11%2Frpg_games-768x432.png&w=640&q=80",
+      "alt": "",
+      "w": 640,
+      "h": 360
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Ficon%2Ffive-nights-at-freddy-s-2.png&w=64&q=90",
+      "alt": "Play Five Nights at Freddy's 2 online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.global.dzgqq.google%2Ficon%2Ftrading-legend.png&w=64&q=90",
+      "alt": "Play Trading Legend online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8867%2Ficon%2Freal-car-parking-and-driving.png&w=64&q=90",
+      "alt": "Play Real Car Parking and Driving online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.hyperbeard.pocketlove%2Ficon%2Fpocket-love.png&w=64&q=90",
+      "alt": "Play Pocket Love online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.mkarpenko.worldbox%2Ficon%2Fworldbox.png&w=64&q=90",
+      "alt": "Play WorldBox - Sandbox God Simulator online on now.gg",
+      "w": 64,
+      "h": 64
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeBrowse-1.png",
+      "alt": "Play Browser Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeCasual.png",
+      "alt": "Play Casual Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeStrategy.png",
+      "alt": "Play Strategy Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeSimulation.png",
+      "alt": "Play Simulation Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeRPG.png",
+      "alt": "Play Role Playing Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeAction-1.png",
+      "alt": "Play Action Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeAdventure-1.png",
+      "alt": "Play Adventure Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypePuzzle.png",
+      "alt": "Play Puzzle Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeArcade-1.png",
+      "alt": "Play Arcade Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeSports.png",
+      "alt": "Play Sports Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeCasino-1.png",
+      "alt": "Play Casino Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeRacing.png",
+      "alt": "Play Racing Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeCard-1.png",
+      "alt": "Play Card Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeEducational.png",
+      "alt": "Play Educational Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cms-cdn.now.gg/cms-media/2023/07/TypeSocial.png",
+      "alt": "Play Social Games on now.gg",
+      "w": 96,
+      "h": 96
+    },
+    {
+      "src": "https://cdn.now.gg/nowgg-static/hue.png",
+      "alt": "",
+      "w": 1440,
+      "h": 516
+    },
+    {
+      "src": "https://now.gg/6/_next/static/media/tiny-logo.204aa7a6.svg",
+      "alt": "now.gg",
+      "w": 28,
+      "h": 21
+    },
+    {
+      "src": "https://cdn.now.gg/nowgg-static/logo/vertical-light-tagline.svg",
+      "alt": "now.gg logo",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://cdn.now.gg/nowgg-static/social/youtube.svg",
+      "alt": "youtube logo",
+      "w": 32,
+      "h": 32
+    },
+    {
+      "src": "https://cdn.now.gg/nowgg-static/social/discord.svg",
+      "alt": "discord logo",
+      "w": 32,
+      "h": 32
+    }
+  ],
+  "svgCount": 6,
+  "structure": {
+    "tag": "body",
+    "cls": "allow-overflow",
+    "id": "",
+    "role": "",
+    "children": [
+      {
+        "tag": "div",
+        "cls": "",
+        "id": "__next",
+        "role": "",
+        "children": [
+          {
+            "tag": "div",
+            "cls": "lcpImgWrapper full-wh",
+            "id": "",
+            "role": "",
+            "children": []
+          },
+          {
+            "tag": "section",
+            "cls": "StyledLayout",
+            "id": "",
+            "role": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "sc-94de68c0-0 iQcwRI",
+        "id": "anahandler",
+        "role": "",
+        "children": [
+          {
+            "tag": "div",
+            "cls": "sc-94de68c0-2 htvJRv",
+            "id": "collapse-ana",
+            "role": "",
+            "children": []
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "cls": "",
+        "id": "",
+        "role": "",
+        "children": []
+      }
+    ]
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Five Nights at Freddy's",
+      "size": "24px",
+      "weight": "600"
+    },
+    {
+      "tag": "h2",
+      "text": "Play Five Nights at Freddy's Online in Browser",
+      "size": "14px",
+      "weight": "600"
+    },
+    {
+      "tag": "h3",
+      "text": "Five Nights at Freddy's is a simulation game developed by Scott Cawthon. With no",
+      "size": "14px",
+      "weight": "400"
+    },
+    {
+      "tag": "h3",
+      "text": "Ads help keep now.gg Free!",
+      "size": "14px",
+      "weight": "600"
+    },
+    {
+      "tag": "h3",
+      "text": "Popular Games",
+      "size": "20px",
+      "weight": "600"
+    },
+    {
+      "tag": "h3",
+      "text": "Video Clips",
+      "size": "20px",
+      "weight": "600"
+    },
+    {
+      "tag": "h3",
+      "text": "Blogs",
+      "size": "20px",
+      "weight": "600"
+    },
+    {
+      "tag": "h3",
+      "text": "Top Picks",
+      "size": "20px",
+      "weight": "600"
+    },
+    {
+      "tag": "h3",
+      "text": "More Games",
+      "size": "20px",
+      "weight": "600"
+    },
+    {
+      "tag": "h2",
+      "text": "Explore by Categories",
+      "size": "24px",
+      "weight": "500"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Play in browser",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "12px",
+      "padding": "16px",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Read more",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "0px",
+      "padding": "1px 6px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "FAQs",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "0px",
+      "padding": "0px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "",
+      "bg": "rgb(17, 17, 17)",
+      "color": "rgb(0, 0, 0)",
+      "radius": "50%",
+      "padding": "0px",
+      "fontSize": "13.3333px",
+      "fontWeight": "400",
+      "border": "1px solid rgb(255, 66, 165)"
+    },
+    {
+      "text": "",
+      "bg": "rgb(17, 17, 17)",
+      "color": "rgb(0, 0, 0)",
+      "radius": "50%",
+      "padding": "0px",
+      "fontSize": "13.3333px",
+      "fontWeight": "400",
+      "border": "1px solid rgb(255, 66, 165)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    },
+    {
+      "text": "Play now",
+      "bg": "rgb(255, 66, 165)",
+      "color": "rgb(255, 255, 255)",
+      "radius": "6px",
+      "padding": "7px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "border": "0px none rgb(255, 255, 255)"
+    }
+  ],
+  "scrollHeight": 6495
+}

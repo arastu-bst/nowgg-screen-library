@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.0664 16H23C23 17.1825 22.5082 18.3166 21.6328 19.1527C20.7574 19.9889 19.57 20.4586 18.332 20.4586H17.5945L19.0132 21.6497L18.3597 22.2739L16.1381 20.3249C16.0943 20.2834 16.0596 20.2341 16.0359 20.1798C16.0122 20.1254 16 20.0671 16 20.0083C16 19.9494 16.0122 19.8912 16.0359 19.8368C16.0596 19.7825 16.0943 19.7332 16.1381 19.6917L18.3503 17.6497L19.0132 18.2828L17.5945 19.5669H18.332C19.3224 19.5669 20.2723 19.1911 20.9726 18.5222C21.673 17.8533 22.0664 16.946 22.0664 16Z" fill="#FF42A5" style="fill:#FF42A5;fill:color(display-p3 1.0000 0.2588 0.6471);fill-opacity:1;"/>
+<path d="M1.93359 8.27388L0.999999 8.27388C0.999999 7.09139 1.4918 5.95733 2.36722 5.12118C3.24263 4.28503 4.42995 3.81529 5.66797 3.81529L6.40551 3.81529L4.98681 2.62421L5.64032 2L7.86192 3.94905C7.90567 3.99049 7.9404 4.03981 7.9641 4.09414C7.9878 4.14847 8 4.20675 8 4.26561C8 4.32446 7.9878 4.38274 7.9641 4.43707C7.9404 4.49141 7.90567 4.54072 7.86192 4.58217L5.64968 6.6242L4.98683 5.99108L6.40551 4.70701L5.66797 4.70701C4.67755 4.70701 3.7277 5.0828 3.02737 5.75172C2.32704 6.42064 1.93359 7.32789 1.93359 8.27388Z" fill="#FF42A5" style="fill:#FF42A5;fill:color(display-p3 1.0000 0.2588 0.6471);fill-opacity:1;"/>
+<rect x="2" y="10" width="12" height="12" rx="2" fill="#EB63AC" style="fill:#EB63AC;fill:color(display-p3 0.9207 0.3876 0.6755);fill-opacity:1;"/>
+<circle cx="6" cy="14" r="1" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle cx="6" cy="18" r="1" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle cx="10" cy="14" r="1" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle cx="10" cy="18" r="1" fill="white" style="fill:white;fill-opacity:1;"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C10.8954 2 10 2.89543 10 4V9H12C13.6569 9 15 10.3431 15 12V14H20C21.1046 14 22 13.1046 22 12V4C22 2.89543 21.1046 2 20 2H12Z" fill="#FF42A5" style="fill:#FF42A5;fill:color(display-p3 1.0000 0.2588 0.6471);fill-opacity:1;"/>
+<circle cx="14" cy="6" r="1" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle cx="18" cy="10" r="1" fill="white" style="fill:white;fill-opacity:1;"/>
+</svg>

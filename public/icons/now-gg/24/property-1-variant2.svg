@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5076_21531)">
+<path d="M14 18.5V20.5C14 20.7652 13.8946 21.0196 13.7071 21.2071C13.5196 21.3946 13.2652 21.5 13 21.5H11C10.7348 21.5 10.4804 21.3946 10.2929 21.2071C10.1054 21.0196 10 20.7652 10 20.5V18.5" stroke="#FFC32A" style="stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M18 10.47C18 8.8787 17.3679 7.35258 16.2426 6.22736C15.1174 5.10214 13.5913 4.47 12 4.47C10.4087 4.47 8.88258 5.10214 7.75736 6.22736C6.63214 7.35258 6 8.8787 6 10.47C6.10135 12.3107 6.80396 14.0672 8 15.47C8.11 15.64 8.5 16.08 8.5 16.28V17.5C8.5 17.7652 8.60536 18.0196 8.79289 18.2071C8.98043 18.3946 9.23478 18.5 9.5 18.5H14.5C14.7652 18.5 15.0196 18.3946 15.2071 18.2071C15.3946 18.0196 15.5 17.7652 15.5 17.5V16.26C15.5 16.06 15.89 15.62 16 15.45C17.192 14.0526 17.8944 12.3037 18 10.47Z" fill="#FFC32A" stroke="#FFC32A" style="fill:#FFC32A;fill:color(display-p3 1.0000 0.7664 0.1658);fill-opacity:1;stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20 9.5H22" stroke="#FFC32A" style="stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M2 9.5H4" stroke="#FFC32A" style="stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M18.5 4L20 2.5" stroke="#FFC32A" style="stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M12 2.5V0.5" stroke="#FFC32A" style="stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M6 4.5L4.5 3" stroke="#FFC32A" style="stroke:#FFC32A;stroke:color(display-p3 1.0000 0.7664 0.1658);stroke-opacity:1;" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_5076_21531">
+<rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
+</clipPath>
+</defs>
+</svg>

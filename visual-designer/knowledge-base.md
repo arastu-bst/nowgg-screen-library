@@ -1,0 +1,75 @@
+# now.gg — Knowledge Base
+Last updated: 2026-06-04 (session 4 audit — library marked BUILT, player + popup
+components added, container-owns-placement composition rule added)
+
+> now.gg's reusable components, patterns, and token hygiene. Format mirrors the
+> WSUP knowledge-base convention (each entry: what it is · when to use ·
+> **Codified by** · pre-flight check), but content is now.gg's own.
+
+## Component library (BUILT — phases 2–3 complete; live at /style-guide)
+Shared shell + section primitives, then page-specific pieces:
+
+- `AppShell` — fixed TopBar + left Rail + scrollable main (`scroll-thin`).
+- `TopBar` — logo · centered `SearchBar` (pill) · category icon rail · avatar.
+- `Rail` — left vertical icon rail (categories / nav).
+- `SectionHeader` — heading + optional "View All" / "Show More" affordance.
+- `IconTileGrid` / `GameIconTile` — square game icon (rounded-tile) + label;
+  grid cols `tiles` (9) / `tiles-mobile` (3).
+- `CardRow` — horizontal carousel (`scroll-hide`), heading + cards.
+- `LandscapeGameCard` — landscape art card (Popular Games / Top Picks).
+- `CategoryPillGrid` / `CategoryPill` — pill chip + icon (Explore by Categories).
+- `VideoClipCard` — vertical (9:16) thumbnail card.
+- `BlogCard` — image + title (font 700, 16px).
+- `GameHero` — game-page hero (art bg + scrim + title + RatingBadge + GenreChip +
+  Play CTA + description/READ MORE/FAQs).
+- `RatingBadge` · `GenreChip` · `Button` (variants: primary-pink / ghost-pink /
+  text-link) · `AdSlot` (placeholder) · `Footer`.
+
+## Token hygiene
+- Every value should resolve to a token in `tailwind.config.ts`. Raw hex/px in a
+  className → flag in `scratchpad.md`, migrate at audit.
+- Synthesized tokens (hover/press states now.gg renders via JS) are commented as
+  `(synthesized)` in the config — don't present them as extracted truth.
+- **Spacing convention (codified S4):** classNames use the Tailwind NUMERIC scale
+  on the 4px grid (gap-3 = s/12, mb-6 = xl/24, py-10 = xxxl/40). The named Float
+  steps (xxxs…xxxl) are the design-side handoff reference (rendered in
+  /style-guide → Scales with the numeric mapping). Don't mix scales in classNames.
+- **Structural tokens must be WIRED (codified S4):** if a chrome token exists for
+  a dim (`header`, `rail`), its consumer must use it — a dead token drifts from
+  the truth it encodes (rail said 72px while the live-measured rail was 70px).
+  Pre-flight: when adding a structural token, migrate the consumer in the same edit.
+- **Style guide prefers REAL components over mockups (codified S4):** wherever a
+  component is placement-free, render it live in its section/pattern — inline
+  mockups drift (the Breadcrumb mockup was already 3 crumbs vs the real 4).
+
+## Button system (Float — node 11884:41882, file apmb9PRrJYKc7cNhCUgz7L)
+now.gg buttons come from the shared **Float** design system. Variants × states
+(default/hover/pressed/disabled) × sizes (S/M/L/XL — label Bricolage 600 @ 12/14/16):
+- **primary** — bg `accent #ff42a5`, hover **`#ff3392`**, white label; rounded or pill (Play CTAs)
+- **secondary** — bg `#e3dfec` lavender, dark-pink label `#c20568`
+- **white** — bg white, `black-80` label
+- **outline** — transparent, `white-20` border, white label
+- **ghost** — transparent, accent border + accent label (Show More)
+- **subtle** — bg `white-10`, secondary label
+- **neutral** — bg `#565656`, white label (also the disabled base)
+- **text** — transparent, `white-70` label (View All)
+- **blue-gradient** — blue gradient bg, white label (brand-secondary; NOT yet built)
+- **icon buttons** — square (rounded) + round (circle), 4 sizes, glyph (NOT yet built)
+Radii: sm r6 · md r8 · lg/xl r12 · pill full. Impl: `src/components/ui/Button.tsx`.
+
+## Player + shell additions (S2–S4)
+- `GameStage` — client state machine: launch → ad → loading → playing.
+- `PlayerControlBar` — solid black; 40px-tap / 24px-white icons; RECTANGULAR
+  buttons (never pills); Remove Ads = Figma SMALL button (gold border r6 + coin).
+- `PlayerAds` (2× 336×280) + `AdSlot` (728×90) — exact IAB sizes, square corners,
+  centered, never stretched. `PlayerRail` — 70px icon-only recent-games rail.
+- `FeaturedBand` — full-bleed white-10 promoted-games band (dev-emphasized lines).
+- `HelpSupportModal` / `RunDiagnosticModal` — white-20 frosted glass panel +
+  ALWAYS black-70 scrim; inputs use Float `Forms` states.
+- `Icon` — CSS-mask renderer for the 419-SVG library (currentColor theming).
+- `Footer` — owns the optional breadcrumb trail as its FIRST ROW (`breadcrumb`
+  prop, 24px above columns; live anatomy). `Breadcrumb` renders the trail only.
+  **Codified by:** S4 (live DOM measured). **Pre-flight:** shell children never
+  carry page-level spacing — the container places them (taste rule 14).
+
+*(Real codified entries accumulate here as components are built and corrected.)*

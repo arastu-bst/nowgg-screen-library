@@ -1,0 +1,161 @@
+{
+  "heads": [
+    {
+      "text": "Little Alchemy 2",
+      "y": 312,
+      "fs": "24px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Play Little Alchemy 2 Online in Browser",
+      "y": 577,
+      "fs": "14px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Little Alchemy 2 is a browser game developed by Re",
+      "y": 598,
+      "fs": "14px",
+      "fw": "400",
+      "align": "center"
+    },
+    {
+      "text": "Ads help keep now.gg Free!",
+      "y": 367,
+      "fs": "14px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Popular Games",
+      "y": 786,
+      "fs": "32px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Video Clips",
+      "y": 1746,
+      "fs": "32px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Blogs",
+      "y": 2253,
+      "fs": "32px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Top Picks",
+      "y": 2632,
+      "fs": "32px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "More Games",
+      "y": 3010,
+      "fs": "32px",
+      "fw": "600",
+      "align": "center"
+    },
+    {
+      "text": "Explore by Categories",
+      "y": 3607,
+      "fs": "32px",
+      "fw": "500",
+      "align": "center"
+    }
+  ],
+  "cardCount": 6,
+  "cards": [
+    {
+      "alt": "Play Smash Karts online on now",
+      "w": 207,
+      "h": 256,
+      "aspect": "0.81",
+      "absY": 1326,
+      "texts": [
+        "<img alt=\"Play Smash Karts online on now.gg\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\" sizes=\"(max-width: 1000px) 256px, 256px\" srcSet=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=1440&amp;q=80 1440w\" src=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub560.app51304%2Fgame-tiles%2Fsmash-karts.jpg&amp;w=1440&amp;q=80\"/>",
+        "Smash Karts",
+        "TALL TEAM"
+      ],
+      "bg": "transparent",
+      "radius": "0px"
+    },
+    {
+      "alt": "Play Gacha Life 2 online on no",
+      "w": 207,
+      "h": 256,
+      "aspect": "0.81",
+      "absY": 1326,
+      "texts": [
+        "<img alt=\"Play Gacha Life 2 online on now.gg\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\" sizes=\"(max-width: 1000px) 256px, 256px\" srcSet=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=1440&amp;q=80 1440w\" src=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fair.com.lunime.gachalife2%2Fgame-tiles%2Fgacha-life-2.jpg&amp;w=1440&amp;q=80\"/>",
+        "Gacha Life 2",
+        "Lunime"
+      ],
+      "bg": "transparent",
+      "radius": "0px"
+    },
+    {
+      "alt": "Play ArmedForces.io online on ",
+      "w": 207,
+      "h": 256,
+      "aspect": "0.81",
+      "absY": 1326,
+      "texts": [
+        "<img alt=\"Play ArmedForces.io online on now.gg\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\" sizes=\"(max-width: 1000px) 256px, 256px\" srcSet=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=1440&amp;q=80 1440w\" src=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub483.app51325%2Fgame-tiles%2Farmedforces-io.jpg&amp;w=1440&amp;q=80\"/>",
+        "ArmedForces.io",
+        "JulGames"
+      ],
+      "bg": "transparent",
+      "radius": "0px"
+    },
+    {
+      "alt": "Play Five Nights at Freddy's 2",
+      "w": 207,
+      "h": 256,
+      "aspect": "0.81",
+      "absY": 1326,
+      "texts": [
+        "<img alt=\"Play Five Nights at Freddy&#x27;s 2 online on now.gg\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\" sizes=\"(max-width: 1000px) 256px, 256px\" srcSet=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=1440&amp;q=80 1440w\" src=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub501.app51767%2Fgame-tiles%2Ffive-nights-at-freddy-s-2.jpg&amp;w=1440&amp;q=80\"/>",
+        "Five Nights at Freddy's 2",
+        "Scott Cawthon"
+      ],
+      "bg": "transparent",
+      "radius": "0px"
+    },
+    {
+      "alt": "Play Swords and Souls online o",
+      "w": 207,
+      "h": 256,
+      "aspect": "0.81",
+      "absY": 1326,
+      "texts": [
+        "<img alt=\"Play Swords and Souls online on now.gg\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\" sizes=\"(max-width: 1000px) 256px, 256px\" srcSet=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=1440&amp;q=80 1440w\" src=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fcom.nowgg.h5.pub807.app51708%2Fgame-tiles%2Fswords-and-souls.jpg&amp;w=1440&amp;q=80\"/>",
+        "Swords and Souls",
+        "Soul Studio"
+      ],
+      "bg": "transparent",
+      "radius": "0px"
+    },
+    {
+      "alt": "Play Linky: Chat with Characte",
+      "w": 207,
+      "h": 256,
+      "aspect": "0.81",
+      "absY": 1326,
+      "texts": [
+        "<img alt=\"Play Linky: Chat with Characters AI online on now.gg\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover\" sizes=\"(max-width: 1000px) 256px, 256px\" srcSet=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=1440&amp;q=80 1440w\" src=\"https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8851%2Fgame-tiles%2Flinky-chat-with-characters-ai.jpg&amp;w=1440&amp;q=80\"/>",
+        "Linky: Chat with Characters AI",
+        "Skywork AI Pte. Ltd."
+      ],
+      "bg": "transparent",
+      "radius": "0px"
+    }
+  ]
+}

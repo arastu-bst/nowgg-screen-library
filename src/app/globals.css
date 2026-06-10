@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* now.gg dark app-shell base */
+@layer base {
+  html,
+  body {
+    background-color: theme('colors.page.bg');
+    color: theme('colors.text.primary');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: theme('fontFamily.sans');
+  }
+
+  ::selection {
+    background: theme('colors.accent.DEFAULT');
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  /* Horizontal card rows on now.gg hide their scrollbar but stay scrollable. */
+  .scroll-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scroll-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Thin dark scrollbar for the main scroll container. */
+  .scroll-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.white-20') transparent;
+  }
+  .scroll-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background: theme('colors.white-10');
+    border-radius: 9999px;
+  }
+
+  /* Clamp helpers for card / tile titles. */
+  .line-clamp-1,
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-1 { -webkit-line-clamp: 1; }
+  .line-clamp-2 { -webkit-line-clamp: 2; }
+}
