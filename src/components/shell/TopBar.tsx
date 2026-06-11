@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { SearchBar } from './SearchBar'
+import { ProfileMenu } from './ProfileMenu'
 import { ASSETS } from '@/lib/mock-data'
 
 // "Play Page Header / Desktop" — Figma 5315:8426. 64px, black-70 + heavy backdrop
@@ -17,9 +18,8 @@ export function TopBar() {
       <SearchBar />
 
       <div className="ml-auto flex shrink-0 items-center gap-3 pl-2">
-        {/* logged-in user avatar — real now.gg profile asset (Figma 5316:9168) */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/profile-avatar.png" alt="Your profile" className="size-10 shrink-0 rounded-pill object-cover ring-1 ring-line" />
+        {/* logged-in user avatar → opens the Profile sidebar (Figma User-Profile 26500:133019) */}
+        <ProfileMenu />
         <span className="h-5 w-px shrink-0 bg-line-strong" aria-hidden />
         {/* Ana AI assistant widget — autoplaying looped video */}
         <video

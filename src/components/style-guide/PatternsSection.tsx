@@ -6,6 +6,7 @@ import { AdSlot } from '@/components/play/AdSlot'
 import { Button } from '@/components/ui/Button'
 import { StarIcon, ChevronRight } from '@/components/ui/icons'
 import { PopupPreview } from './PopupPreview'
+import { ProfileSidebarPreview } from './ProfileSidebarPreview'
 import { GAMES, POSTERS } from '@/lib/mock-data'
 
 // The now.gg pattern kit — recurring COMPOSITIONS (not individual components). Each
@@ -88,6 +89,10 @@ export function PatternsSection() {
 
       <Pattern name="Popups (glass)" recipe="white-20 frosted panel + backdrop-blur · ALWAYS black-70 scrim · header + X · inputs use Float Forms states (default white-50 → hover white-70 → focus accent)" used="player help icon → Run Diagnostic; Help & Support kept for reference">
         <PopupPreview />
+      </Pattern>
+
+      <Pattern name="Profile sidebar (glass drawer)" recipe="right drawer portaled to <body> (escapes TopBar's backdrop-blur containing block) · white-20 frosted panel + backdrop-blur · ALWAYS black-70 scrim (taste 13) · slide-in via translate-x · close/help notch buttons OUTSIDE the left edge, gated on open · inner chips bg-black-20 on the glass" used="TopBar avatar → every page">
+        <ProfileSidebarPreview />
       </Pattern>
     </div>
   )

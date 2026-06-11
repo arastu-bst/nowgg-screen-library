@@ -1,5 +1,5 @@
 # now.gg — Taste
-Last updated: 2026-06-04 (session 4 — rule 14 added; rules 9–13 were session-2 additions)
+Last updated: 2026-06-10 (session 5 — rule 13 corrected (white-20, not black-30) + extended to cover nav drawers; Profile sidebar built)
 
 > This file is now.gg's design *language* and the designer's corrections — NOT
 > token specs (those live in `tailwind.config.ts` + `/style-guide`). It captures
@@ -86,10 +86,14 @@ square-cornered and rendered at their exact IAB size, centered — never stretch
 12. **Promoted/featured bands are full-bleed.** now.gg punctuates the catalog with an
     unlabeled white-10 full-width band of portrait poster cards where the **developer is
     the emphasized line** (game name 12/white-70 above, dev 14/white below).
-13. **Overlay scrims are ALWAYS black-70.** Every modal/popup scrim = `black-70` — no
-    exceptions. The popup PANEL is a black-30 frosted glass (backdrop blur); the SCRIM
-    behind it is black-70. Text inputs use the Float `Forms` states (default border
-    white-50 → hover white-70 → focus accent; placeholder white-30; label white-80).
+13. **Overlay scrims are ALWAYS black-70; overlay panels are white-20 frosted glass.**
+    Every modal/popup/**drawer** scrim = `black-70` — no exceptions. The PANEL is a
+    `white-20` frosted glass (backdrop-blur). This applies to centered popups AND to
+    full-height **nav drawers** — the Profile sidebar follows the same glass, NOT an
+    opaque exception (an opaque-drawer attempt was overridden by the designer in S5).
+    Inner chips on the glass use `black-20` (`white-05` vanishes against `white-20`).
+    Text inputs use the Float `Forms` states (default border white-50 → hover white-70
+    → focus accent; placeholder white-30; label white-80). *(S5: corrected from "black-30".)*
 
 14. **The container owns rhythm and placement — never the child.** Page/section
     wrappers own section spacing: a full-bleed band gets the SAME section rhythm
@@ -100,4 +104,5 @@ square-cornered and rendered at their exact IAB size, centered — never stretch
     up to the container. (Both S4 catches were this one principle.)
 
 ## Open corrections log
-*(Sessions 2 + 4 corrections promoted above. The designer's future corrections accumulate here.)*
+*(Sessions 2 + 4 corrections promoted above. S5 corrections promoted to rule 13 +
+decisions.md + reasonings.md. The designer's future corrections accumulate here.)*

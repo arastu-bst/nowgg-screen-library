@@ -28,3 +28,7 @@ next-env.d.ts
 
 # extraction artifacts kept (design-source/) but ignore heavy node runs
 design-source/node_modules
+
+# preview screenshots (local self-critique) + vercel link
+/__preview/
+.vercel

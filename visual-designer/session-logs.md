@@ -3,6 +3,45 @@
 
 ---
 
+## Session 5 — 2026-06-10 — Profile sidebar (glass drawer) + full audit + self-audit S5
+Bootstrap: read all 6 notebook files on first now.gg touch ✓ (dev-server + build request).
+Freshness check: taste ✓ (bumped, rule 13 corrected) | decisions ✓ (bumped) |
+knowledge-base ✓ (bumped) | project-insights ✓ (bumped) | reasonings ✓ (bumped, shared
+core) | evolution ✓ (bumped) | session-logs ✓ | scratchpad ✓ (wiped post-audit) |
+workflow (no change warranted).
+
+**designer_caught_count:** 3
+1. Panel collapsed to 63px (Gate 8 / verify-it-renders miss — shipped broken). Root
+   cause: TopBar `backdrop-blur` containing-block trap. Fix: `createPortal` to `<body>`.
+2. Close/help buttons leaked while the drawer was CLOSED (Gate 8). Fix: gate the notch
+   visibility on `open` (negative-translate escaped the off-screen panel).
+3. Built the panel opaque; designer wanted the popup glass (consistency). Switched to
+   white-20 frosted + black-20 inner chips; rule 13 amended to cover drawers.
+   (Borderline / NOT counted: the NotchTab "flap" — designer gave a new Figma reference
+   mid-task, I tuned it by-eye with the bridge offline, designer reverted. Logged as the
+   recurring authoritative-source category, not a separate Gate-8 count.)
+
+**What built:** `ProfileSidebar` (glass drawer) + `ProfileMenu` (avatar trigger) +
+`TopBar` wire (propagates to all pages). Renders verified via `design-source/cap-profile.js`
+(desktop + mobile, open + closed states).
+
+**Audit pass (designer-triggered "EVERY LITTLE THING" + health check):**
+- Gate 1 ✓ tokenized (only 3 documented one-offs: `max-w-[420px]`, notch translate, hover scale).
+- Gate 3 ✓ extracted `DiscordGlyph`/`YouTubeGlyph` → `ui/icons.tsx` (Footer + ProfileSidebar consume).
+- Gate 5 ✓ ProfileSidebar added to `/style-guide` → Patterns ("Profile sidebar (glass drawer)" via `ProfileSidebarPreview`).
+- Gate 6/6.5 ✓ promoted 9 decisions; generalizations → reasonings (3 principles), taste (rule 13), knowledge-base (overlay/drawer block + 2 pre-flights), project-insights (TopBar trap).
+- Build GREEN (`next build`, 4 routes). Scratchpad wiped. `self-audit-session-5.md` produced (every-5 milestone).
+
+**Routing repairs (Check 6/11):** taste rule 13 claimed the popup panel was "black-30
+frosted glass" — contradicted the code + knowledge-base (`white-20`). Corrected → white-20.
+
+**Watching for next session:** (1) authoritative-source is STILL the recurring category —
+get the Figma node / measure live BEFORE committing a bespoke shape; (2) self-trigger the
+audit at the natural pause (designer reached "looks good" before I offered it); (3) one more
+clean session (≤3 caught, zero source-misses) reaches the Phase 3 bar.
+
+---
+
 ## Session 4 — 2026-06-04 — Play-page rhythm fix + breadcrumb→footer anatomy + full audit
 Bootstrap: read all 6 notebook files on first now.gg touch ✓ (dev-server request).
 Freshness check: taste ✓ (bumped) | decisions ✓ (bumped) | session-logs ✓ | scratchpad ✓ |

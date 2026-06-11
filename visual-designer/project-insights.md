@@ -1,6 +1,6 @@
 # now.gg — Project Insights
-Last updated: 2026-06-04 (session 4 audit — play page is the slug-aware PLAYER;
-breadcrumb anatomy corrected to footer-internal)
+Last updated: 2026-06-10 (session 5 — Profile sidebar drawer added; TopBar
+backdrop-blur containing-block trap documented)
 
 > Architecture, domain, asset rules, and conventions specific to the now.gg
 > replica. Facts a developer/designer needs that aren't taste.
@@ -21,6 +21,13 @@ breadcrumb anatomy corrected to footer-internal)
   right cluster (profile avatar · divider · Ana widget). **NO left nav rail** — an
   early inferred rail was removed (confirmed against Figma node 5315:8426 + live).
   Single **scrollable main column** below the bar.
+  - The **profile avatar opens the `ProfileSidebar` glass drawer** (S5); the **Ana
+    widget is still non-interactive** (open scope call — wire or leave design-only).
+  - ⚠️ **TopBar is a `fixed`-containing block.** Because the header uses
+    `backdrop-blur-2xl`, any `position:fixed` overlay rendered as a descendant of the
+    TopBar resolves against the 64px header, not the viewport (it collapses). Overlays
+    triggered from the header (ProfileSidebar, future menus) MUST `createPortal` to
+    `<body>`. Same applies to any ancestor with `filter`/`transform`/`will-change`.
 - ⚠️ On the live site the main column is an **inner scroll container** (the window
   itself does NOT scroll). Relevant if anyone re-extracts — window-scroll capture
   misses below-fold content (see `design-source/extract-home-v2.js` for the

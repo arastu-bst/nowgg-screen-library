@@ -1,4 +1,5 @@
 import { Breadcrumb, type Crumb } from './Breadcrumb'
+import { DiscordGlyph, YouTubeGlyph } from '@/components/ui/icons'
 
 // Footer — matched to the LIVE now.gg footer (the Figma frame diverged; live wins).
 // Optional breadcrumb trail renders as the footer's own first row (live: the trail
@@ -61,16 +62,14 @@ export function Footer({ breadcrumb }: { breadcrumb?: Crumb[] }) {
               <li>
                 <a className="inline-flex items-center gap-2.5 text-sm text-text-tertiary transition-colors hover:text-text-primary">
                   <span className="flex size-5 items-center justify-center rounded bg-brand-youtube text-white">
-                    <svg viewBox="0 0 24 24" className="size-3" fill="currentColor" aria-hidden><path d="M8 5v14l11-7z" /></svg>
+                    <YouTubeGlyph className="size-3" />
                   </span>
                   YouTube
                 </a>
               </li>
               <li>
                 <a className="inline-flex items-center gap-2.5 text-sm text-text-tertiary transition-colors hover:text-text-primary">
-                  <svg viewBox="0 0 24 24" className="size-5 text-brand-discord" fill="currentColor" aria-hidden>
-                    <path d="M19 5a16 16 0 0 0-4-1l-.3.5a12 12 0 0 1 3.6 1.8C16 5.5 14 5 12 5s-4 .5-6.3 1.3A12 12 0 0 1 9.3 4.5L9 4a16 16 0 0 0-4 1C2.5 9 2 13 2 17a13 13 0 0 0 4 2l1-1.6c-.7-.3-1.4-.6-2-1l.5-.4a9 9 0 0 0 13 0l.5.4c-.6.4-1.3.7-2 1L18 19a13 13 0 0 0 4-2c0-4-.5-8-3-12zM9 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                  </svg>
+                  <DiscordGlyph className="size-5 text-brand-discord" />
                   Discord
                 </a>
               </li>

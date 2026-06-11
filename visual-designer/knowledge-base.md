@@ -1,6 +1,7 @@
 # now.gg — Knowledge Base
-Last updated: 2026-06-04 (session 4 audit — library marked BUILT, player + popup
-components added, container-owns-placement composition rule added)
+Last updated: 2026-06-10 (session 5 audit — ProfileSidebar glass drawer added; glass
+overlay confirmed as a 3-consumer pattern; Discord/YouTube glyphs extracted; portal
+pre-flight + closed-overlay-no-leak rules codified)
 
 > now.gg's reusable components, patterns, and token hygiene. Format mirrors the
 > WSUP knowledge-base convention (each entry: what it is · when to use ·
@@ -71,5 +72,24 @@ Radii: sm r6 · md r8 · lg/xl r12 · pill full. Impl: `src/components/ui/Button
   prop, 24px above columns; live anatomy). `Breadcrumb` renders the trail only.
   **Codified by:** S4 (live DOM measured). **Pre-flight:** shell children never
   carry page-level spacing — the container places them (taste rule 14).
+
+## Overlay / drawer additions (S5)
+- `ProfileSidebar` (+ `ProfileMenu` trigger) — right-side **glass drawer** opened from
+  the TopBar avatar. White-20 frosted panel + black-70 scrim (taste 13), slide-in via
+  `translate-x`, **portaled to `<body>`**, Esc + scrim-click close, scrollable middle +
+  pinned footer, inner chips `black-20`. **Codified by:** S5.
+  **Pre-flight 1 (portal):** any overlay triggered from inside a `backdrop-filter` /
+  `filter` / `transform` ancestor (the TopBar is `backdrop-blur-2xl`) MUST portal to
+  `<body>` — otherwise that ancestor becomes its containing block and `fixed inset-0`
+  collapses to it (the drawer rendered 63px tall until portaled).
+  **Pre-flight 2 (no leak):** anything positioned OUTSIDE an off-screen panel (the
+  negative-translated notch buttons) stays visible when the panel slides away — gate
+  its visibility on the `open` state.
+- **Glass overlay** is now a confirmed pattern with **3 consumers** (RunDiagnostic,
+  HelpSupport, ProfileSidebar): white-20 frosted panel + ALWAYS black-70 scrim +
+  black-20 inner chips. Demoed in `/style-guide` → Patterns ("Popups" + "Profile sidebar").
+- `DiscordGlyph` / `YouTubeGlyph` — third-party brand marks extracted to `ui/icons.tsx`
+  (S5, Gate 3 at 2 consumers: Footer + ProfileSidebar). Never inline a brand-mark
+  `<svg>` again — import the glyph.
 
 *(Real codified entries accumulate here as components are built and corrected.)*
