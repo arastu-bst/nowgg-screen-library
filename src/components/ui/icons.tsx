@@ -1,5 +1,5 @@
 // Inline glyphs the now.gg / Float library has no clean equivalent for: a rating
-// star, a nav chevron, and the two third-party brand marks (Discord, YouTube).
+// star, a nav chevron, a close X, and the two third-party brand marks (Discord, YouTube).
 // Everything else uses the real library icons via the <Icon> component
 // (public/icons/now-gg/*); category icons are exported Figma SVGs.
 type P = { className?: string }
@@ -13,6 +13,14 @@ export const StarIcon = ({ className }: P) => (
 export const ChevronRight = ({ className }: P) => (
   <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
     <path d="m9 6 6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+// Close / dismiss X — popups (HelpSupport, RunDiagnostic) + the ProfileSidebar notch &
+// mobile-header close. Size + color come from className on the wrapping button.
+export const CloseGlyph = ({ className }: P) => (
+  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+    <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
 )
 

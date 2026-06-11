@@ -1,7 +1,6 @@
 # now.gg — Knowledge Base
-Last updated: 2026-06-10 (session 5 audit — ProfileSidebar glass drawer added; glass
-overlay confirmed as a 3-consumer pattern; Discord/YouTube glyphs extracted; portal
-pre-flight + closed-overlay-no-leak rules codified)
+Last updated: 2026-06-11 (session 6 audit — CloseGlyph extracted (Gate 3 at 4); profile
+stat-chip anatomy + icon-vs-illustration render rule codified)
 
 > now.gg's reusable components, patterns, and token hygiene. Format mirrors the
 > WSUP knowledge-base convention (each entry: what it is · when to use ·
@@ -91,5 +90,22 @@ Radii: sm r6 · md r8 · lg/xl r12 · pill full. Impl: `src/components/ui/Button
 - `DiscordGlyph` / `YouTubeGlyph` — third-party brand marks extracted to `ui/icons.tsx`
   (S5, Gate 3 at 2 consumers: Footer + ProfileSidebar). Never inline a brand-mark
   `<svg>` again — import the glyph.
+- `CloseGlyph` — the close/dismiss X, extracted to `ui/icons.tsx` (S6, Gate 3 at **4**
+  consumers: ProfileSidebar ×2 + HelpSupportModal + RunDiagnosticModal). `ui/icons.tsx`
+  now holds Star · Chevron · **Close** · Discord · YouTube. **Pre-flight:** never hand-roll
+  a close-X `<svg>` inline again — import `CloseGlyph` (size/color via className).
+
+## Profile sidebar pieces (S6 — Figma-accurate)
+- **Profile stat chip** (Figma "Stats Row" 26502:58932/59014) — compact **48px** (`h-12`;
+  Figma 44, +4 by designer call), `bg-black-20` + `border-white-20` hairline (r12), label
+  `text-3xs`(10)/white-70/`leading-3`/`tracking-[0.02em]`, value `text-2xs`(12)/semibold/white,
+  `gap-2`. The right-anchored **badge illustration** (frosted tile + glyph, one exported
+  Figma SVG) is `absolute inset-y-0 right-0 h-full`; content `pr-10` clears it.
+- **Icon rendering rule (codified S6):** monochrome glyph → `currentColor` (the `<Icon>`
+  CSS-mask for library SVGs, or an inline `<svg fill="currentColor">`); **multi-color
+  illustration → exported Figma SVG in `public/` rendered via `<img>`** — a CSS mask uses
+  only alpha and would flatten the colors. The stat badges (`game-cards`/`gold-cauldron`)
+  are exported assets, NOT `Icon` names. **Pre-flight:** before rendering, ask "one color
+  or many?" and verify it actually renders (the S5 stat icons 404'd at size 32 → invisible).
 
 *(Real codified entries accumulate here as components are built and corrected.)*

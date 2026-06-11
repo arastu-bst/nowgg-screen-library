@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/Button'
+import { CloseGlyph } from '@/components/ui/icons'
 
 // Run Diagnostic popup — opens from the control-bar help icon. Same glass as Help &
 // Support (white-20 panel + black-70 scrim). Three states: idle → running → done.
@@ -56,7 +57,7 @@ export function RunDiagnosticModal({ onClose }: { onClose: () => void }) {
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-text-primary">Run Diagnostic</h2>
           <button onClick={onClose} aria-label="Close" className="text-text-tertiary transition-colors hover:text-text-primary">
-            <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M6 6l12 12M18 6L6 18" /></svg>
+            <CloseGlyph className="size-4" />
           </button>
         </div>
 

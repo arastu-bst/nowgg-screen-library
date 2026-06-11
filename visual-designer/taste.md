@@ -1,5 +1,5 @@
 # now.gg — Taste
-Last updated: 2026-06-10 (session 5 — rule 13 corrected (white-20, not black-30) + extended to cover nav drawers; Profile sidebar built)
+Last updated: 2026-06-11 (session 6 — rules 15–17 added: pinned-chrome boundary, edge-anchored-squares-corners, no-duplicate-identity-in-header)
 
 > This file is now.gg's design *language* and the designer's corrections — NOT
 > token specs (those live in `tailwind.config.ts` + `/style-guide`). It captures
@@ -102,6 +102,24 @@ square-cornered and rendered at their exact IAB size, centered — never stretch
     breadcrumb row; the trail component renders only the trail. Whenever a child
     component carries page-level margins/padding, that's drift — move the spacing
     up to the container. (Both S4 catches were this one principle.)
+
+15. **Pinned chrome over a scrolling body needs a boundary.** When a header or
+    footer stays put (`shrink-0`) while content scrolls between them, give it a
+    `border-line` hairline (or an on-scroll shadow) — spacing alone lets the
+    scrolling content merge into the title/first-row. (S6: the Profile drawer
+    header had no boundary; the profile row slid up into "Profile".) The footer
+    edge has the same need.
+
+16. **Full-bleed, edge-anchored surfaces square their corners.** Radius is for
+    surfaces that float inside padding (cards, popups, chips). A surface flush to
+    the viewport edge — a full-height side drawer, a top bar, a full-bleed band —
+    gets square corners; a lone rounded corner on an edge-anchored panel reads as
+    a mistake. (S6: removed the drawer's `rounded-tl`.)
+
+17. **A panel header shouldn't repeat an identity element shown in its body.**
+    Avatar in the drawer header + avatar in the profile row directly below = a
+    duplicate signal; the header is title-only. Same family as the WSUP
+    "two warning icons close together" catch — one signal per concept per surface.
 
 ## Open corrections log
 *(Sessions 2 + 4 corrections promoted above. S5 corrections promoted to rule 13 +

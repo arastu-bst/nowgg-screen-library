@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from 'react'
+import { CloseGlyph } from '@/components/ui/icons'
 
 // Help & Support popup — opens from the control-bar help icon. Structure/sizing from
 // Figma Float—Player 7681:48872 (380px · r12 · fields r6 black-20 · accent checkbox r2);
@@ -28,7 +29,7 @@ export function HelpSupportModal({ onClose }: { onClose: () => void }) {
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-text-primary">Help &amp; Support</h2>
           <button onClick={onClose} aria-label="Close" className="text-text-tertiary transition-colors hover:text-text-primary">
-            <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M6 6l12 12M18 6L6 18" /></svg>
+            <CloseGlyph className="size-4" />
           </button>
         </div>
 
@@ -57,7 +58,7 @@ export function HelpSupportModal({ onClose }: { onClose: () => void }) {
 
           <label className="flex items-center gap-2.5">
             <span className="flex size-4 shrink-0 items-center justify-center rounded-xxs bg-accent">
-              <svg viewBox="0 0 24 24" className="size-3" fill="none" stroke="#f5f5f5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M5 12l4 4L19 7" /></svg>
+              <svg viewBox="0 0 24 24" className="size-3 text-text-primary" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M5 12l4 4L19 7" /></svg>
             </span>
             <span className="text-2xs text-text-primary">Run a diagnostic report</span>
           </label>

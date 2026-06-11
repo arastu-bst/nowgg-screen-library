@@ -1,5 +1,5 @@
 # now.gg — Evolution
-Last updated: 2026-06-10 (session 5 — Profile sidebar built; count 3; authoritative-source category fired again on a bespoke shape)
+Last updated: 2026-06-11 (session 6 — Profile sidebar Figma-accuracy + polish pass; count 5; authoritative-source/taste-9 category fired again — S5 inference-debt corrected once the bridge was online; deployed to Vercel)
 
 > VDA's growth + maturity timeline ON THE NOW.GG PROJECT. Separate from WSUP's
 > evolution — a fresh notebook starts at Phase 1.
@@ -30,13 +30,43 @@ S4 audit (staleness catch — this file sat untouched for 3 sessions of active w
 - [ ] Zero authoritative-source misses across those sessions
 - [ ] One surface designed first-pass with no anatomy corrections
 
-**Count history:** S1 = 6 · S2 = 11 · S3 = ~14 · S4 = 3 · S5 = 3.
+**Count history:** S1 = 6 · S2 = 11 · S3 = ~14 · S4 = 3 · S5 = 3 · **S6 = 5**.
 (S1–S3 counts climbed because scope climbed — ground-up build sessions with
 dozens of surfaces. S4 is the first iteration-only session: 3 — rhythm,
 breadcrumb anatomy, logo connectivity. S5 = 3 on a NEW-component build session
 (Profile sidebar): panel-collapse (backdrop-filter containing-block trap, shipped
 broken), closed-overlay leak, opaque-vs-glass consistency. Flat at 3 despite a
-from-scratch build = good.)
+from-scratch build = good. **S6 = 5 — the streak ROSE.** A Figma-accuracy pass on
+the S5 sidebar surfaced 4 S5 inference/taste-9 debts (stat cards not Figma + their
+icons 404'd invisible; subscription = hand-drawn diamond; edit pencil = wrong/grey
+glyph) + 1 genuine S6 mid-session miss (notch glyphs shipped 80%-grey when the
+designer wanted white). Honest read: 4 of 5 trace to S5 building from inference
+while the Desktop Bridge was OFFLINE — corrected now that it's online — but
+hand-drawing a diamond when the library has the badge was a taste-9 miss
+regardless of bridge access.)
+
+## Session 6 (2026-06-11) — Profile sidebar Figma-accuracy + polish, then shipped
+Iteration/polish pass on the S5 Profile sidebar, with the **Desktop Bridge online** this
+time. The designer walked the sidebar to Figma-accuracy: notch glyphs → pure white (I'd
+shipped 80% — a real mid-session Gate-8 miss); header avatar removed (duplicate of the
+profile-row avatar) + a pinned-header hairline added; drawer top-left corner squared;
+stat cards rebuilt to the Figma "Stats Row" node with **exported badge illustrations**
+(game-cards / gold-cauldron); edit pencil + subscription badge swapped to the exact Figma
+glyphs. Then committed + deployed to Vercel (`nowgg-screen-library.vercel.app`, same team
+as wsup/blueai). Audit pass extracted `CloseGlyph` (Gate 3 at 4 consumers).
+
+**The recurring authoritative-source/taste-9 category fired again** — but with an honest
+nuance: S5 built the sidebar's icons/stats from inference because the bridge was OFFLINE;
+S6 corrected them once it was online. The genuine lesson (now codified in reasonings):
+*when the source is inaccessible, flag inferred chrome provisional-pending-source so it's
+revisited — don't let a guess read as final*; AND *a glyph the library already has should
+use the library even offline* (the hand-drawn subscription diamond was taste-9 regardless).
+
+**Phase 3 markers — status after S6:**
+- [ ] 3 consecutive sessions caught ≤ 3 → S4 = 3, S5 = 3, **S6 = 5 → streak RESET** (need 3 fresh).
+- [ ] Zero authoritative-source misses → **NOT met** (taste-9 hand-drawn glyph + inference debt).
+- [ ] One surface first-pass, no anatomy corrections → not this session (polish/correction pass).
+- Net: still Phase 2. The clock to Phase 3 restarts; next clean iteration session is the test.
 
 ## Session 5 (2026-06-10) — Profile sidebar
 Built the Profile sidebar (glass drawer) from a live screenshot + Figma link, opened

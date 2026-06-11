@@ -1,6 +1,6 @@
 # now.gg — Project Insights
-Last updated: 2026-06-10 (session 5 — Profile sidebar drawer added; TopBar
-backdrop-blur containing-block trap documented)
+Last updated: 2026-06-11 (session 6 — Profile sidebar Figma source nodes recorded;
+file qmq3nfiuJyFZ3feVIMfCQh)
 
 > Architecture, domain, asset rules, and conventions specific to the now.gg
 > replica. Facts a developer/designer needs that aren't taste.
@@ -71,3 +71,17 @@ Implication: token/button decisions here may echo WSUP's system; treat Float as 
 canonical source when the live site and a guess disagree. (Variables REST API is
 plan-locked — pull specific nodes via figma-console `get_component_for_development`
 + render, or read swatch fills from the node dump.)
+
+## Profile sidebar — Figma source (file `qmq3nfiuJyFZ3feVIMfCQh`, "User Profile")
+Authoritative nodes for the Profile drawer (read live via the Desktop Bridge in S6 —
+the bridge was OFFLINE at S5, so S5 built from inference and S6 corrected against these):
+- **Gamification Sidebar / User-Profile** — `26500:133019` (the drawer itself).
+- **Stats Row** — `Stat 1` (Games Played) `26502:58932` · `Stat 2` (Total Playtime)
+  `26502:59014`. Each: 150×44 chip, `Translucents Dark/20%` fill + `Translucents Light/20%`
+  stroke (r12), label Bricolage 10 Regular `Text/Body` (70%), value Bricolage 12 SemiBold
+  white; right "Illustration" frame = white-10 frosted tile (a VECTOR) + a colored badge
+  instance (`game-cards-*` / `gold-cauldron-*`). Exported to `public/profile/badge-*.svg`.
+- **Edit Details** pencil — `26502:62323` (white `Text/Title`, 18px frame). Inlined.
+- **Tags/Editor** (Subscriptions header) — `26502:62325` (hexagon + star knockout). Inlined.
+To re-pull: figma-console `figma_execute` → `getNodeByIdAsync` + `exportAsync({format:'SVG'})`
+(see `design-source/` capture scripts). Bridge must be running in Figma Desktop.

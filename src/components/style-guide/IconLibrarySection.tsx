@@ -2,6 +2,17 @@
 import { useState } from 'react'
 import { cn } from '@/lib/cn'
 import { ICONS, ICON_SIZES, ICON_COUNTS } from '@/lib/icon-library'
+import { StarIcon, ChevronRight, CloseGlyph, DiscordGlyph, YouTubeGlyph } from '@/components/ui/icons'
+
+// Inline glyphs hand-authored in ui/icons.tsx (currentColor) for marks the Float
+// library has no clean equivalent for. Catalogued here so they're discoverable.
+const INLINE_GLYPHS = [
+  { name: 'StarIcon', El: StarIcon },
+  { name: 'ChevronRight', El: ChevronRight },
+  { name: 'CloseGlyph', El: CloseGlyph },
+  { name: 'DiscordGlyph', El: DiscordGlyph },
+  { name: 'YouTubeGlyph', El: YouTubeGlyph },
+]
 
 // The now.gg / Float icon library, exported live from Figma at 4 sizes. Tabs switch
 // the rendered size. Icons keep their designed fills (built for dark UI), shown on
@@ -37,6 +48,21 @@ export function IconLibrarySection() {
             <span className="w-full truncate text-center text-3xs text-text-dim">{ic.name}</span>
           </div>
         ))}
+      </div>
+
+      {/* Inline glyphs — hand-authored in ui/icons.tsx (currentColor), for marks the library lacks. */}
+      <div className="space-y-3 border-t border-line pt-5">
+        <p className="text-2xs font-semibold uppercase tracking-wider text-text-tertiary">
+          Inline glyphs <span className="font-normal normal-case text-text-dim">· ui/icons.tsx · currentColor</span>
+        </p>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(74px,1fr))] gap-2">
+          {INLINE_GLYPHS.map((g) => (
+            <div key={g.name} title={g.name} className="flex flex-col items-center gap-1.5 rounded-m border border-line bg-fill-subtle p-2 text-text-primary">
+              <g.El className="size-7" />
+              <span className="w-full truncate text-center text-3xs text-text-dim">{g.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

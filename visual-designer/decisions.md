@@ -1,5 +1,5 @@
 # now.gg — Decisions
-Last updated: 2026-06-04 (session 4 audit)
+Last updated: 2026-06-11 (session 6 audit — Profile sidebar Figma-accuracy + polish pass; CloseGlyph extracted)
 
 > Design decisions with reasoning. Promoted from `scratchpad.md` at audit passes.
 
@@ -42,5 +42,14 @@ Last updated: 2026-06-04 (session 4 audit)
 | 2026-06-10 | Profile sidebar **added to `/style-guide`** as a "Profile sidebar (glass drawer)" pattern (trigger → live `ProfileSidebar` via `ProfileSidebarPreview`). | Gate 5 — overlays are demoed via a trigger preview (same as `PopupPreview`); a style-guide reader must be able to open it. |
 | 2026-06-10 | **NotchTab flap attempted then REVERTED** to the two-button close/help treatment (per designer). | A bespoke concave-cove SVG silhouette tuned BY EYE (Desktop Bridge offline) read "not good"; designer preferred the simpler accepted treatment. Lesson: don't commit a guessed silhouette — get the Figma node, or keep what the designer already accepts. |
 | 2026-06-10 | Panel width `max-w-[420px]` kept as a documented **one-off** (not tokenized). | Single structural dimension, no 3+ reuse → no token (Gate 1 exception, like the IAB ad sizes / 132px game icon). |
+
+| 2026-06-11 | **Match the Figma source of truth for the stat cards, not a guess.** Designer flagged them off; rebuilt to the real "Stats Row" node — compact dark chip, hairline, small label over a bold value. | An authoritative source beats inference *once it's reachable*. S5 built these from a screenshot because the Figma bridge was offline; with it online, keeping the guess = drift. (Full node IDs + token spec in `project-insights` / `knowledge-base`.) |
+| 2026-06-11 | **Use the real Figma badge art, exported as image assets.** The game-cards / gold-cauldron illustration on each chip is multi-color, so it ships as an SVG `<img>`, not a themed icon. | A mask carries only alpha → it would flatten a multi-color illustration to one color. And always check it *renders*: the S5 chips showed nothing because the icon names 404'd. Generalized in `reasonings`: one color → currentColor; many → exported asset. |
+| 2026-06-11 | **Trust the designer's eye over the spec px: stat chips 44→48px.** | Figma's 44px chip lives in a 348px sidebar; ours sits in a wider 420px drawer, so 44 read squat. A small, deliberate deviation from spec *because the context differs* — the eye, not the number, is the authority. |
+| 2026-06-11 | **When the designer names a node, that node wins over a library near-match — edit pencil = the Figma "Edit Details" glyph (white).** | The library's edit glyph is a different, solid-pink pencil — wrong shape and color here. Inlined as `currentColor` so it themes like the other chrome. |
+| 2026-06-11 | **Never hand-draw a glyph the library/Figma already has — Subscriptions icon = the Figma badge, replacing a hand-drawn diamond.** Held at the sibling header's 70%. | The diamond was an invention (taste-9 miss). Held at 70% so the two section headers ("Subscriptions", "Recently played") read as a matched pair; Figma fills it white → flagged for the designer to choose pair-consistency vs Figma-exact. |
+| 2026-06-11 | **Same role, different context → different weight: notch glyphs go full white.** Designer wanted presence, not the muted grey I'd shipped. | The notch sits out on the dark scrim where a glyph must read at a glance; the footer's social glyphs stay quieter (80%) because they're tucked inside the glass. (The brighter help glyph also needed the full-opacity source SVG — the other had transparency baked in.) |
+| 2026-06-11 | **Let the drawer chrome read honestly: title-only header + a hairline under it, squared top-left corner.** Three calls, one instinct. | (a) the avatar was already in the profile row, so repeating it in the header was a duplicate signal; (b) a pinned header over scrolling content needs a boundary or the scroll merges into the title; (c) a full-height drawer flush to the screen edge shouldn't wear a lone rounded corner. |
+| 2026-06-11 | **One shared close-X (`CloseGlyph`), not four hand-rolled copies.** | The same X was inlined 4× across 3 files, and now.gg already keeps its glyphs in one place — a single source means the close icon can't drift between the popups and the drawer. (System hygiene, surfaced by the Gate-3 sweep; build GREEN.) |
 
 *(New rows accumulate at audit passes.)*

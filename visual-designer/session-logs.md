@@ -3,6 +3,58 @@
 
 ---
 
+## Session 6 — 2026-06-11 — Profile sidebar Figma-accuracy + polish, shipped to Vercel, full audit
+Bootstrap: read all 6 notebook files on first now.gg touch ✓ (design-review request).
+Freshness check: taste ✓ (bumped, rules 15–17) | decisions ✓ (bumped, 7 rows) |
+knowledge-base ✓ (bumped, CloseGlyph + stat-chip + icon-render rule) | project-insights ✓
+(bumped, Figma source nodes) | reasonings ✓ (bumped, 2 principles, shared core) |
+evolution ✓ (bumped, S6 + count 5) | session-logs ✓ | scratchpad ✓ (wiped post-audit) |
+workflow (no change warranted).
+
+**designer_caught_count:** 5
+1. Notch close/help glyphs shipped 80%-grey; designer wanted white (genuine S6 mid-session
+   Gate-8 miss — I swapped to the 0.8-opacity `24/help-icon.svg` + `text-secondary`). Fixed:
+   `16/help.svg` (full-opacity) + `text-primary`.
+2. Duplicate avatar — header avatar repeated the profile-row avatar (Gate-8 duplicate-signal,
+   shipped S5). Fixed: header is title-only.
+3. Stat cards not Figma-accurate + their icons rendered NOTHING (`gamepad`/`gameplay-time`
+   404 at size 32 — verify-it-renders miss, S5). Fixed: rebuilt to the Figma node + exported
+   real badge illustrations.
+4. Subscriptions icon was a hand-drawn diamond (taste-9 violation, S5). Fixed: Figma "Tags/Editor".
+5. Edit pencil was the wrong glyph (library solid-pink, masked grey) vs Figma's white pencil. Fixed.
+(NOT counted — designer preferences / new constraints: the header divider (designer-initiated
+UX Q), the stat-height +4px bump, the squared top-left corner.)
+Honest note: 4 of 5 are S5 inference/taste-9 debt — S5 built from inference with the Desktop
+Bridge OFFLINE; S6 corrected once it was online. Codified the prevention in reasonings
+(provisional-pending-source + use-the-library-even-offline). Count ROSE 3→5; Phase-3 streak reset.
+
+**What built/changed:** Profile sidebar — notch glyphs white; help → `16/help.svg`; header
+title-only + white-10 hairline; squared drawer top-left; stat cards → Figma "Stats Row" spec
+(`h-12`, black-20 + white-20, 10/12px type) with exported `public/profile/badge-{game-cards,
+gold-cauldron}.svg`; edit pencil + subscription badge → exact Figma glyphs. Shipped: committed
+`33ffa4a` → `arpityadav-bst/nowgg-screen-library` → Vercel `nowgg-screen-library.vercel.app`
+(prod, same team as wsup/blueai). `.gitignore` += `__preview/` + `.vercel`.
+
+**Audit pass (designer-triggered "thorough quality-gate + health check"):**
+- Gate 1 ✓ — only documented one-offs (`max-w-[420px]`, `size-[18px]`, `tracking-[0.02em]`,
+  notch translate, hover scale); each ×1, no 3× threshold, no raw hex.
+- Gate 3 ✓ — extracted `CloseGlyph` → `ui/icons.tsx`; replaced 4 hand-rolled close-X (ProfileSidebar
+  ×2 + HelpSupportModal + RunDiagnosticModal). Build GREEN after.
+- Gate 5 ✓ — `/style-guide` Patterns renders the LIVE `ProfileSidebar` via `ProfileSidebarPreview`
+  (no mockup to drift); ProfileMenu wired into TopBar. No orphans.
+- Gate 6/6.5 ✓ — 7 decisions promoted; generalizations → taste (15–17), reasonings (2),
+  knowledge-base (CloseGlyph + stat-chip + render rule), project-insights (Figma nodes).
+- Files <300 (ProfileSidebar 200). Build GREEN ×2. Scratchpad wiped.
+
+**Watching for next session:** (1) authoritative-source/taste-9 STILL the recurring category —
+with the bridge now reliably online, pull the Figma node BEFORE building any glyph/surface, and
+flag anything inferred as provisional. (2) caught_count rose to 5 — next session is iteration-only;
+target ≤3 and zero hand-drawn-glyph misses to restart the Phase-3 streak. (3) minor open a11y:
+the closed drawer's off-screen interactive elements stay tab-focusable (no `inert`) — design-only,
+deferred; revisit if this becomes a real handoff concern.
+
+---
+
 ## Session 5 — 2026-06-10 — Profile sidebar (glass drawer) + full audit + self-audit S5
 Bootstrap: read all 6 notebook files on first now.gg touch ✓ (dev-server + build request).
 Freshness check: taste ✓ (bumped, rule 13 corrected) | decisions ✓ (bumped) |

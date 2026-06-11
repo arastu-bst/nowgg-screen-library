@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
-import { ChevronRight, DiscordGlyph, YouTubeGlyph } from '@/components/ui/icons'
+import { ChevronRight, CloseGlyph, DiscordGlyph, YouTubeGlyph } from '@/components/ui/icons'
 import { GAMES } from '@/lib/mock-data'
 import { cn } from '@/lib/cn'
 
@@ -89,7 +89,7 @@ export function ProfileSidebar({ open, onClose }: { open: boolean; onClose: () =
             even while the panel is slid off (translate-x-full). */}
         <div className={cn('absolute left-0 top-4 hidden -translate-x-[calc(100%+12px)] flex-col gap-2 transition-opacity duration-300 sm:flex', open ? 'opacity-100' : 'pointer-events-none opacity-0')}>
           <NotchButton label="Close profile" onClick={onClose}>
-            <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M6 6l12 12M18 6L6 18" /></svg>
+            <CloseGlyph className="size-5" />
           </NotchButton>
           <NotchButton label="Help">
             <Icon name="help" size={16} className="size-5" />
@@ -101,7 +101,7 @@ export function ProfileSidebar({ open, onClose }: { open: boolean; onClose: () =
         <div className="flex shrink-0 items-center justify-between gap-3 border-b border-line px-5 pb-3 pt-5">
           <h2 className="text-base font-bold text-text-primary">Profile</h2>
           <button type="button" onClick={onClose} aria-label="Close profile" className="text-text-tertiary transition-colors hover:text-text-primary sm:hidden">
-            <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M6 6l12 12M18 6L6 18" /></svg>
+            <CloseGlyph className="size-5" />
           </button>
         </div>
 
