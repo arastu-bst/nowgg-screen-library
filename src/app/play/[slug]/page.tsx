@@ -6,6 +6,7 @@ import { GameStage } from '@/components/play/GameStage'
 import { AdSlot } from '@/components/play/AdSlot'
 import { FeaturedBand } from '@/components/play/FeaturedBand'
 import { Section } from '@/components/ui/Section'
+import { BluestacksBand } from '@/components/marketing/BluestacksBand'
 import { IconTileGrid } from '@/components/game/IconTileGrid'
 import { VideoClipCard } from '@/components/media/VideoClipCard'
 import { FeatureCard } from '@/components/media/FeatureCard'
@@ -83,6 +84,9 @@ export default function PlayPage({ params }: { params: { slug: string } }) {
           <Section title="Explore by Categories" action="View All">
             <CategoryChips categories={CATEGORIES} />
           </Section>
+
+          {/* BlueStacks promo band — same contained card as the homepage (now.gg → BlueStacks ad experiment) */}
+          <BluestacksBand />
         </div>
 
         {/* ── Footer with its breadcrumb bar (live: trail is the footer's first row) ── */}
