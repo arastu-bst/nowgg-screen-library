@@ -6,6 +6,7 @@ import { CategoryChips } from '@/components/category/CategoryChips'
 import { FeatureCard } from '@/components/media/FeatureCard'
 import { VideoClipCard } from '@/components/media/VideoClipCard'
 import { AboutSection } from '@/components/marketing/AboutSection'
+import { BluestacksBand } from '@/components/marketing/BluestacksBand'
 import { FaqAccordion } from '@/components/marketing/FaqAccordion'
 import { MyGamesRow } from '@/components/game/MyGamesRow'
 import { TOP_GAMES, MORE_GAMES, POPULAR_GAMES, TOP_PICKS, VIDEOS, BLOGS, CATEGORIES } from '@/lib/mock-data'
@@ -30,6 +31,8 @@ export default function HomePage() {
       <Section title="More Games" moreLabel="Show More">
         <IconTileGrid games={MORE_GAMES} />
       </Section>
+
+      <BluestacksBand />
 
       <Section title="Explore by Categories" action="View All">
         <CategoryChips categories={CATEGORIES} />

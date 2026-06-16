@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { SearchBar } from './SearchBar'
 import { ProfileMenu } from './ProfileMenu'
+import { BluestacksCta } from '@/components/ui/BluestacksCta'
 import { ASSETS } from '@/lib/mock-data'
 
 // "Play Page Header / Desktop" — Figma 5315:8426. 64px, black-70 + heavy backdrop
@@ -18,6 +19,8 @@ export function TopBar() {
       <SearchBar />
 
       <div className="ml-auto flex shrink-0 items-center gap-3 pl-2">
+        {/* cross-brand download CTA → bluestacks.com (now.gg → BlueStacks ad experiment) */}
+        <BluestacksCta context="topbar" />
         {/* logged-in user avatar → opens the Profile sidebar (Figma User-Profile 26500:133019) */}
         <ProfileMenu />
         <span className="h-5 w-px shrink-0 bg-line-strong" aria-hidden />

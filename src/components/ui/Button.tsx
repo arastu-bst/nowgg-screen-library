@@ -36,24 +36,31 @@ const radius: Record<Size, string> = {
   xl: 'rounded-cta',
 }
 
-export function Button({
-  variant = 'primary',
-  size = 'md',
-  shape = 'rounded',
-  className,
-  children,
-  ...rest
-}: {
+type CommonProps = {
   variant?: Variant
   size?: Size
   shape?: Shape
   className?: string
   children: React.ReactNode
-} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
+}
+
+// Polymorphic: pass `href` and it renders as an anchor (e.g. the external BlueStacks
+// CTA needs a real crawlable <a>, not an onClick button); otherwise a <button>.
+type ButtonProps = CommonProps & (React.ButtonHTMLAttributes<HTMLButtonElement> | (React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }))
+
+export function Button({ variant = 'primary', size = 'md', shape = 'rounded', className, children, ...rest }: ButtonProps) {
   const isText = variant === 'text'
   const r = shape === 'pill' ? 'rounded-pill' : radius[size]
+  const cls = cn(base, variants[variant], !isText && sizes[size], !isText && r, className)
+  if ('href' in rest && rest.href !== undefined) {
+    return (
+      <a className={cls} {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
+        {children}
+      </a>
+    )
+  }
   return (
-    <button className={cn(base, variants[variant], !isText && sizes[size], !isText && r, className)} {...rest}>
+    <button className={cls} {...(rest as React.ButtonHTMLAttributes<HTMLButtonElement>)}>
       {children}
     </button>
   )

@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
+import { BluestacksCta } from '@/components/ui/BluestacksCta'
 import { StarIcon } from '@/components/ui/icons'
 import { PlayerAdScreen } from './PlayerAdScreen'
 import { PlayerControlBar } from './PlayerControlBar'
@@ -66,9 +67,13 @@ export function GameStage({ game }: { game: PlayGame }) {
                 </div>
               )}
             </div>
-            <Button variant="primary" size="lg" className="mt-1 min-w-[184px] py-3" onClick={() => setPhase('ad')}>
-              Play in Browser
-            </Button>
+            {/* CTA cluster: pink Play (primary) + the quiet cross-brand BlueStacks anchor */}
+            <div className="mt-1 flex flex-col items-center gap-2.5">
+              <Button variant="primary" size="lg" className="min-w-[184px] py-3" onClick={() => setPhase('ad')}>
+                Play in Browser
+              </Button>
+              <BluestacksCta context="hero" />
+            </div>
           </div>
           <div className="mx-auto max-w-2xl px-6 pb-5 text-center">
             <p className="text-base font-semibold text-text-primary/80">Play {game.title} Online in Browser</p>

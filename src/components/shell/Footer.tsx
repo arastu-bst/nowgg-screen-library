@@ -1,5 +1,6 @@
 import { Breadcrumb, type Crumb } from './Breadcrumb'
 import { DiscordGlyph, YouTubeGlyph } from '@/components/ui/icons'
+import { BluestacksCta } from '@/components/ui/BluestacksCta'
 
 // Footer — matched to the LIVE now.gg footer (the Figma frame diverged; live wins).
 // Optional breadcrumb trail renders as the footer's own first row (live: the trail
@@ -45,6 +46,8 @@ export function Footer({ breadcrumb }: { breadcrumb?: Crumb[] }) {
         <div className="col-span-2 md:col-span-1">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/footer-logo.svg" alt="now.gg — Mobile Cloud" className="h-16 w-auto" />
+          {/* cross-brand download CTA → bluestacks.com (now.gg → BlueStacks ad experiment) */}
+          <BluestacksCta context="footer" className="mt-4" />
         </div>
 
         <Col head="Games" links={[{ t: 'All Games' }, { t: 'Action' }, { t: 'RPG' }, { t: 'Strategy' }, { t: 'Casual' }, { t: 'Puzzle' }, { t: 'Adventure' }, { t: 'Simulation' }]} />
