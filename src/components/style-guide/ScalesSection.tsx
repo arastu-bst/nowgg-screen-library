@@ -9,6 +9,7 @@ const RADIUS: [string, number][] = [
 const SHADOWS: [string, string][] = [
   ['shadow-fl-sm', 'Shadow / Small'], ['shadow-fl-md', 'Shadow / Normal'], ['shadow-fl-lg', 'Shadow / Big'],
   ['shadow-fl-dark', 'Shadow / Dark'], ['shadow-fl-button', 'Button shadow'], ['shadow-card', 'Card'], ['shadow-glow', 'Glow (inset)'],
+  ['shadow-pill', 'Header pill'], ['shadow-plan-card', 'Plan card'],
 ]
 
 export function ScalesSection() {
@@ -40,6 +41,24 @@ export function ScalesSection() {
               <span className="font-mono text-2xs text-text-dim">{k} · {px}</span>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="space-y-3">
+        <h3 className="text-sm font-semibold text-text-tertiary">Borders &amp; radius aliases</h3>
+        <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-col items-center gap-1.5">
+            <div className="size-16 rounded-card border-hair border-white-50 bg-fill-soft" />
+            <span className="font-mono text-2xs text-text-dim">border-hair · 0.8px</span>
+          </div>
+          <p className="max-w-md font-mono text-2xs leading-relaxed text-text-faint">
+            <span className="text-text-dim">border-hair</span> = the now.gg 0.8px hairline (CTAs, panel border + dividers).
+            Radius semantic aliases map onto the scale above: <span className="text-text-dim">tile</span>=8 ·
+            <span className="text-text-dim"> card/cta/xl</span>=12 · <span className="text-text-dim">cta-sm/r6</span>=6 ·
+            <span className="text-text-dim"> r10</span>=10 · <span className="text-text-dim">xxl</span>=16 · <span className="text-text-dim">pill</span>=full.
+            <br />⚠ never use single-letter side-keyword radius keys (s·e·t·r·b·l) — they collide with Tailwind's
+            built-in rounded-&#123;side&#125; utilities (use r6 / r10).
+          </p>
         </div>
       </div>
 

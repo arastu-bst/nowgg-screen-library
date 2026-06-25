@@ -2,10 +2,11 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
-import { BluestacksCta } from '@/components/ui/BluestacksCta'
 import { StarIcon } from '@/components/ui/icons'
 import { PlayerAdScreen } from './PlayerAdScreen'
 import { PlayerControlBar } from './PlayerControlBar'
+import { NowPrimePopup } from './NowPrimePopup'
+import { PlayFlowToggler, type PlayState } from './PlayFlowToggler'
 import type { PlayGame } from '@/lib/play'
 
 // The "Gameplay Area" (Figma 5318:18653) with its three live states:
@@ -19,6 +20,14 @@ type Phase = 'launch' | 'ad' | 'loading' | 'playing'
 
 export function GameStage({ game }: { game: PlayGame }) {
   const [phase, setPhase] = useState<Phase>('launch')
+  const [prime, setPrime] = useState(false) // flow B: the nowPrime upsell popup
+
+  // dev flow toggler — jump to any state incl. the nowPrime popup
+  const current: PlayState = prime ? 'prime' : phase
+  const selectFlow = (s: PlayState) => {
+    setPrime(s === 'prime')
+    if (s !== 'prime') setPhase(s)
+  }
 
   // brief game-loading state → playing
   useEffect(() => {
@@ -67,12 +76,11 @@ export function GameStage({ game }: { game: PlayGame }) {
                 </div>
               )}
             </div>
-            {/* CTA cluster: pink Play (primary) + the quiet cross-brand BlueStacks anchor */}
+            {/* Play CTA */}
             <div className="mt-1 flex flex-col items-center gap-2.5">
               <Button variant="primary" size="lg" className="min-w-[184px] py-3" onClick={() => setPhase('ad')}>
                 Play in Browser
               </Button>
-              <BluestacksCta context="hero" />
             </div>
           </div>
           <div className="mx-auto max-w-2xl px-6 pb-5 text-center">
@@ -114,6 +122,10 @@ export function GameStage({ game }: { game: PlayGame }) {
           <PlayerControlBar />
         </>
       )}
+
+      {/* flow B — nowPrime upsell popup + the bottom-right dev flow toggler */}
+      {prime && <NowPrimePopup onClose={() => setPrime(false)} />}
+      <PlayFlowToggler current={current} onSelect={selectFlow} />
     </div>
   )
 }

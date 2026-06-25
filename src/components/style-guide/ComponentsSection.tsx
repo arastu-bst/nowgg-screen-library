@@ -1,10 +1,15 @@
 import { Button } from '@/components/ui/Button'
 import { RatingBadge } from '@/components/ui/RatingBadge'
+import { CloseButtonPreview } from './CloseButtonPreview'
+import { BluestacksCta } from '@/components/ui/BluestacksCta'
+import { NowPrimeCta } from '@/components/ui/NowPrimeCta'
 import { GameIconTile } from '@/components/game/GameIconTile'
 import { PosterCard } from '@/components/game/PosterCard'
+import { GameListRow } from '@/components/game/GameListRow'
 import { CategoryChips } from '@/components/category/CategoryChips'
 import { AdSlot } from '@/components/play/AdSlot'
 import { GAMES, POSTERS, CATEGORIES } from '@/lib/mock-data'
+import { FOOTBALL_FEVER } from '@/lib/collections'
 
 const VARIANTS = ['primary', 'secondary', 'white', 'outline', 'ghost', 'subtle', 'neutral', 'text'] as const
 
@@ -50,6 +55,32 @@ export function ComponentsSection() {
           <div className="w-40"><PosterCard item={POSTERS[0]} /></div>
           <div className="self-start"><RatingBadge rating={4.29} /></div>
         </div>
+      </Sub>
+
+      <Sub title="Header brand pills (white-10 glass · shared HEADER_PILL chrome + shadow-pill + border-hair)">
+        <div className="flex flex-wrap items-center gap-3">
+          <NowPrimeCta />
+          <BluestacksCta />
+        </div>
+        <p className="mt-2 text-2xs text-text-faint">NowPrimeCta opens the nowPrime popup · BluestacksCta is a crawlable &lt;a&gt; → bluestacks.com.</p>
+      </Sub>
+
+      <Sub title="Close button — the ONE shared popup close (CloseButton)">
+        <div className="inline-flex rounded-card border border-line bg-surface p-2">
+          <CloseButtonPreview />
+        </div>
+        <p className="mt-2 text-2xs text-text-faint">20px glyph in a 36px hit target · white-70 → white + white-10 hover container · used by every popup (NowPrime, Help &amp; Support, Run Diagnostic).</p>
+      </Sub>
+
+      <Sub title="Collection row + rating pill (GameListRow)">
+        <div className="max-w-[320px] rounded-card border border-line bg-surface p-3">
+          <GameListRow game={FOOTBALL_FEVER[0]} />
+        </div>
+        <p className="mt-2 text-2xs text-text-faint">80px icon (rounded-card, hover zoom + white-05 hover container) · title white-80 clamp-2 · rating pill black-20 rounded-m + gold ★ + 1-decimal.</p>
+      </Sub>
+
+      <Sub title="Best Value badge (nowPrime · bg-prime-badge)">
+        <span className="inline-block rounded-pill bg-prime-badge px-2.5 py-[5px] text-3xs font-bold uppercase leading-none tracking-wide text-white">Best Value</span>
       </Sub>
 
       <Sub title="Category chips">

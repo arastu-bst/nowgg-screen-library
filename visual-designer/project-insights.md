@@ -1,6 +1,6 @@
 # now.gg — Project Insights
-Last updated: 2026-06-11 (session 6 — Profile sidebar Figma source nodes recorded;
-file qmq3nfiuJyFZ3feVIMfCQh)
+Last updated: 2026-06-25 (S8 audit — BlueStacks CTA now header-only; nowPrime popup +
+subscribe flow + provider; combined-logo bbox map; new tokens; screenshot-wedge fix)
 
 > Architecture, domain, asset rules, and conventions specific to the now.gg
 > replica. Facts a developer/designer needs that aren't taste.
@@ -85,3 +85,27 @@ the bridge was OFFLINE at S5, so S5 built from inference and S6 corrected agains
 - **Tags/Editor** (Subscriptions header) — `26502:62325` (hexagon + star knockout). Inlined.
 To re-pull: figma-console `figma_execute` → `getNodeByIdAsync` + `exportAsync({format:'SVG'})`
 (see `design-source/` capture scripts). Bridge must be running in Figma Desktop.
+
+## S7–S8 additions (2026-06-16 → 06-25)
+- **BlueStacks "by now.gg" CTA is now HEADER-ONLY.** S7 spread it to 4 spots (TopBar +
+  play-hero + footer + a homepage/app `BluestacksBand`); S8 removed all but the TopBar
+  lockup and deleted `BluestacksBand`. The header CTA is the live now.gg two-line pill
+  (logo + "Download BlueStacks" / "by now" + pink ".gg"), a real crawlable `<a>` →
+  bluestacks.com. Asset: `/public/bluestacks-logo.png` (96² @3x).
+- **nowPrime flow (design-only).** `NowPrimePopup` (the upsell gate) + `NowPrimeProvider`
+  (root-layout context: `isPrime` + `subscribe/cancel`, resets on refresh). Buy any plan →
+  `subscribe()` → `HeaderLogo` swaps to the PRIME lockup. Triggers: the header `NowPrimeCta`
+  (any page) and the `/play` `PlayFlowToggler` (Launch · nowPrime · Ad · Loading · Playing).
+  Assets in `/public/icons/now-gg/`: `now-prime-logo.webp`, `now-prime-text.webp`, `tick.svg`,
+  `/public/now-prime-bg.mp4`.
+- **The header logo is ONE combined SVG** (`ASSETS.logo`, viewBox 165×50). Measured shape
+  bboxes (getBBox) for any future split: **dot** x0–48 / y7.5–42 · **"now.gg" wordmark**
+  x60–155 / y18–36. The PRIME lockup crops these into two `overflow-hidden` windows (no new
+  asset) at 40px render height (scale 0.8).
+- **New tokens:** `prime-gold #ffb03c` (color — sampled from the nowPrime wordmark via
+  canvas); bg-gradients `prime-hero` (#352f87→#5c54c7), `prime-badge` (#7b4cff→#0ea4c5),
+  `collection-glow` (Football Fever top glow over #111).
+- **Screenshot wedge (tooling):** now.gg's autoplaying Ana + launch `<video>`s stall
+  headless capture (`document_idle` never fires) — `preview_screenshot` / Claude-in-Chrome
+  hang. FIX: `preview_eval` to pause/remove all `<video>` first, then capture. Also: a
+  `location.href` reload re-arms the wedge — prefer a fresh `preview_start` + soft-nav.

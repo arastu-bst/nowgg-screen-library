@@ -25,11 +25,15 @@ const BRAND = [
   { name: 'Teal', value: '#67c3bb' }, { name: 'Yellow', value: '#ffc32a' },
   { name: 'Sky', value: '#0397eb' }, { name: 'Coral', value: '#f33621' },
   { name: 'Pale', value: '#eee3d9' }, { name: 'Gold (rating)', value: '#ffce47' },
+  { name: 'Prime Gold', value: '#ffb03c' },
 ]
 const GRADIENT = [
   { name: 'Gradient Purple', value: '#7b4cff' }, { name: 'Gradient Blue', value: '#0ea4c5' },
   { name: 'AI gradient', value: 'linear-gradient(to top right, #0ea4c5, #7b4cff)' },
   { name: 'Page glow', value: 'radial-gradient(60% 80% at 0% 100%, rgba(255,66,165,0.5), transparent 60%), radial-gradient(60% 80% at 100% 100%, rgba(14,164,197,0.4), transparent 60%)' },
+  { name: 'Prime hero (bg-prime-hero)', value: 'linear-gradient(98deg, #352f87, #5c54c7)' },
+  { name: 'Prime badge (bg-prime-badge)', value: 'linear-gradient(270deg, #7b4cff, #0ea4c5)' },
+  { name: 'Collection glow (bg-collection-glow)', value: 'radial-gradient(120% 70% at 75% -5%, rgba(255,66,165,0.30), rgba(255,66,165,0) 55%), #111111' },
 ]
 const TEXT = [
   { name: 'Text Primary', value: '#ffffff' }, { name: 'Text Secondary 80', value: '#ffffffcc' },

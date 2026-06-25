@@ -29,7 +29,7 @@ export function CategoryChips({ categories }: { categories: string[] }) {
           <button
             key={c}
             className={cn(
-              'flex items-center gap-2.5 rounded-l border border-line bg-fill-subtle px-4 py-2.5',
+              'flex items-center gap-2.5 rounded-r10 border border-line bg-fill-subtle px-4 py-2.5',
               'text-sm font-medium text-text-secondary transition-colors',
               'hover:border-line-strong hover:bg-fill-soft hover:text-text-primary',
             )}

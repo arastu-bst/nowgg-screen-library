@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react'
-import { CloseGlyph } from '@/components/ui/icons'
+import { CloseButton } from '@/components/ui/CloseButton'
 
 // Help & Support popup — opens from the control-bar help icon. Structure/sizing from
 // Figma Float—Player 7681:48872 (380px · r12 · fields r6 black-20 · accent checkbox r2);
@@ -9,7 +9,7 @@ import { CloseGlyph } from '@/components/ui/icons'
 // from the Float Forms collection (Dark). Design-only.
 const label = 'block text-2xs font-semibold uppercase tracking-wide text-text-secondary'
 // Float Forms (Dark): default border white-50 → hover white-70 → focus accent; placeholder white-30
-const field = 'w-full rounded-s border border-white-50 bg-black-20 text-sm text-text-primary outline-none transition-colors placeholder:text-white-30 hover:border-white-70 focus:border-accent'
+const field = 'w-full rounded-r6 border border-white-50 bg-black-20 text-sm text-text-primary outline-none transition-colors placeholder:text-white-30 hover:border-white-70 focus:border-accent'
 
 export function HelpSupportModal({ onClose }: { onClose: () => void }) {
   useEffect(() => {
@@ -28,9 +28,7 @@ export function HelpSupportModal({ onClose }: { onClose: () => void }) {
         {/* header */}
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-text-primary">Help &amp; Support</h2>
-          <button onClick={onClose} aria-label="Close" className="text-text-tertiary transition-colors hover:text-text-primary">
-            <CloseGlyph className="size-4" />
-          </button>
+          <CloseButton onClose={onClose} className="-mr-1.5" />
         </div>
 
         {/* fields */}
@@ -42,7 +40,7 @@ export function HelpSupportModal({ onClose }: { onClose: () => void }) {
 
           <div className="space-y-1.5">
             <label className={label}>Problem Description *</label>
-            <div className="relative rounded-s border border-white-50 bg-black-20 p-3 transition-colors hover:border-white-70 focus-within:border-accent">
+            <div className="relative rounded-r6 border border-white-50 bg-black-20 p-3 transition-colors hover:border-white-70 focus-within:border-accent">
               <textarea rows={3} placeholder="Use atleast 12 characters to describe the problem you are experiencing" className="w-full resize-none bg-transparent pb-4 text-sm leading-relaxed text-text-primary outline-none placeholder:text-white-30" />
               <span className="pointer-events-none absolute bottom-2.5 right-3 text-3xs font-medium text-text-primary">0 / 200</span>
             </div>
@@ -50,7 +48,7 @@ export function HelpSupportModal({ onClose }: { onClose: () => void }) {
 
           <div className="space-y-1.5">
             <label className={label}>Upload picture or screenshot</label>
-            <button type="button" className="flex w-full flex-col items-center justify-center gap-2 rounded-s border border-dashed border-line bg-black-20 py-5 text-text-secondary transition-colors hover:border-line-strong hover:text-text-primary">
+            <button type="button" className="flex w-full flex-col items-center justify-center gap-2 rounded-r6 border border-dashed border-line bg-black-20 py-5 text-text-secondary transition-colors hover:border-line-strong hover:text-text-primary">
               <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M12 16V4m0 0L8 8m4-4l4 4" /><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg>
               <span className="text-sm font-medium">Upload from device</span>
             </button>

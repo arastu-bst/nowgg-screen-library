@@ -1,5 +1,5 @@
 # now.gg — Evolution
-Last updated: 2026-06-11 (session 6 — Profile sidebar Figma-accuracy + polish pass; count 5; authoritative-source/taste-9 category fired again — S5 inference-debt corrected once the bridge was online; deployed to Vercel)
+Last updated: 2026-06-25 (S8 — homepage/play overhaul + S7+S8 audit; count ROSE to 6; new recurring category: *copy the working sibling's structure first* = the WSUP S33–S36 precedent-grep gap, now on now.gg)
 
 > VDA's growth + maturity timeline ON THE NOW.GG PROJECT. Separate from WSUP's
 > evolution — a fresh notebook starts at Phase 1.
@@ -30,7 +30,10 @@ S4 audit (staleness catch — this file sat untouched for 3 sessions of active w
 - [ ] Zero authoritative-source misses across those sessions
 - [ ] One surface designed first-pass with no anatomy corrections
 
-**Count history:** S1 = 6 · S2 = 11 · S3 = ~14 · S4 = 3 · S5 = 3 · **S6 = 5**.
+**Count history:** S1 = 6 · S2 = 11 · S3 = ~14 · S4 = 3 · S5 = 3 · S6 = 5 · S7 = 1 · **S8 = 6**.
+(S7 was a clean small CTA build — count 1. **S8 ROSE to 6** on a large overhaul — see the S8
+entry: the recurring category shifted from authoritative-source to *precedent-grep / copy the
+working sibling first* — the same gap that rolled WSUP S33–S36. The clock to Phase 3 stays reset.)
 (S1–S3 counts climbed because scope climbed — ground-up build sessions with
 dozens of surfaces. S4 is the first iteration-only session: 3 — rhythm,
 breadcrumb anatomy, logo connectivity. S5 = 3 on a NEW-component build session
@@ -44,6 +47,53 @@ designer wanted white). Honest read: 4 of 5 trace to S5 building from inference
 while the Desktop Bridge was OFFLINE — corrected now that it's online — but
 hand-drawing a diamond when the library has the badge was a taste-9 miss
 regardless of bridge access.)
+
+## Session 8 (2026-06-25) — now.gg homepage/play overhaul + the full S7+S8 audit
+Large iteration + new-build session: BlueStacks CTA → live header lockup then narrowed to
+header-only (BluestacksBand deleted); "Football Fever" `CollectionPanel` + sticky right-rail;
+Show-More + short-videos sections removed; nowPrime popup replicated 1:1 + a `/play` flow
+toggler + the subscribe→PRIME-logo flow (`NowPrimeProvider`); shared `CloseButton`; rounded
+side-key bug fixed (`l`→`r10`, `s`→`r6`); `Button` reverted to button-only.
+
+**designer_caught_count: 6** (S5 = 3 · S6 = 5 · **S8 = 6** — the streak ROSE). Qualifying
+(VDA shipped, designer caught): (1) Football Fever list uncapped — didn't match now.gg's
+internal-scroll; (2) **nowPrime bottom blur invisible — fought across several rounds before
+matching HelpSupport's structure** (the central miss); (3) Best Value badge black/mixed-case —
+scraped the container, not the leaf; (4) badge height + crowded title not now.gg-accurate;
+(5) close icons inconsistent across popups (Gate 7); (6) wordmark upscaled/pixelated. Excluded
+as designer-driven taste-calibration: close-size, header-wordmark size, PRIME shift nudges,
+Monthly-blue (I surfaced it, not silently chosen).
+
+**Recurring category (honest):** *copy the working sibling's STRUCTURE first.* The blur fiasco is
+the SAME precedent-grep gap that rolled WSUP S33–S36 — HelpSupportModal already solved the frosted
+popup and I re-derived instead of copying it. Remediation applied this audit: frosted-popup
+pattern → KB; "copy the working sibling first" + "read the leaf not the container" → reasonings.
+The fix is habit, not more rules — next clean test is matching the precedent first-pass.
+
+**Phase:** still **Phase 2**. Phase-3 markers (3 consecutive sessions caught ≤ 3, zero
+precedent-grep misses, one first-pass-clean surface) — clock resets again.
+
+**Audit (this turn):** code gate — tsc 0, `next build` green (5/5 routes), Button orphan removed,
+0 dead refs. Scratchpad (30 rows, S7+S8) promoted → decisions/taste/KB/reasonings/insights, wiped.
+**Gate 5 — DONE (same-day follow-up):** tokenized `border-hair` + `shadow-pill` +
+`shadow-plan-card`, extracted the shared `HEADER_PILL` chrome (Gate-3 at 2), and synced every
+new colour/gradient/shadow/border/component/pattern into `/style-guide`. Exact-1:1-replication
+values kept as documented one-offs (the principled Gate-1 exception, like the IAB ad sizes).
+
+**S8 follow-up #2 (same day) — the tokenization INTRODUCED a regression, caught + fixed.** The
+`border-[0.8px]`→`border-hair` migration silently dropped the stroke on every `cn()`-built component
+(tailwind-merge mis-buckets the custom width key as a colour). Designer caught it ("strokes gone now, why?").
+Fixed by making `cn()` design-system-aware (`extendTailwindMerge` mirrors all custom keys); verified live
+(0 drops / 1144 els) + build green. This is a **verify-the-real-rendered-result** miss — I trusted the
+`/style-guide` swatch, which used a plain string and hid the drop — the SAME recurring family as now.gg
+S5/S6 + blueAI S2/S5. Honest count: S8's designer-caught effectively **6 → 7** incl. this follow-up. Clock
+to Phase 3 stays reset; next clean test is a token migration verified on the real consumer first-pass.
+
+## Session 7 (2026-06-16) — BlueStacks "by now.gg" cross-brand CTA (4 placements), shipped
+**designer_caught_count: 1** — "full width" misread (built a `fullBleed` band; designer meant the
+homepage band on the app page too). NOT the watched authoritative-source/taste-9 category; applied
+the multi-color-`<img>` + pink-reservation rules correctly. **Audit was DEFERRED** (designer said
+bye) → 8 scratchpad rows carried into S8 (now promoted). A clean small build between the heavier S6/S8.
 
 ## Session 6 (2026-06-11) — Profile sidebar Figma-accuracy + polish, then shipped
 Iteration/polish pass on the S5 Profile sidebar, with the **Desktop Bridge online** this

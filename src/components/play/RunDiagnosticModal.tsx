@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/Button'
-import { CloseGlyph } from '@/components/ui/icons'
+import { CloseButton } from '@/components/ui/CloseButton'
 
 // Run Diagnostic popup — opens from the control-bar help icon. Same glass as Help &
 // Support (white-20 panel + black-70 scrim). Three states: idle → running → done.
@@ -56,9 +56,7 @@ export function RunDiagnosticModal({ onClose }: { onClose: () => void }) {
       <div className="relative z-10 w-full max-w-[380px] space-y-5 rounded-card border border-line bg-white-20 p-5 shadow-fl-lg backdrop-blur-2xl">
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-text-primary">Run Diagnostic</h2>
-          <button onClick={onClose} aria-label="Close" className="text-text-tertiary transition-colors hover:text-text-primary">
-            <CloseGlyph className="size-4" />
-          </button>
+          <CloseButton onClose={onClose} className="-mr-1.5" />
         </div>
 
         {phase === 'idle' && (
@@ -100,7 +98,7 @@ export function RunDiagnosticModal({ onClose }: { onClose: () => void }) {
                 <p className="mt-1 text-2xs text-text-tertiary">No issues found in your setup.</p>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-4 rounded-s border border-line bg-black-20 py-2.5 text-2xs font-medium">
+            <div className="flex items-center justify-center gap-4 rounded-r6 border border-line bg-black-20 py-2.5 text-2xs font-medium">
               <span className="text-status-success">{TOTAL} passed</span>
               <span className="text-text-dim">·</span>
               <span className="text-text-tertiary">0 blocked</span>

@@ -24,7 +24,7 @@ export function PlayerRail({ games }: { games: Game[] }) {
             </span>
           </a>
           {/* hover tooltip — dark pill, game name, wraps long titles */}
-          <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-2 w-max max-w-[180px] -translate-x-1/2 rounded-l bg-black-80 px-3 py-2 text-center text-2xs font-medium text-white opacity-0 shadow-soft backdrop-blur-sm transition-opacity duration-200 group-hover:opacity-100">
+          <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-2 w-max max-w-[180px] -translate-x-1/2 rounded-r10 bg-black-80 px-3 py-2 text-center text-2xs font-medium text-white opacity-0 shadow-soft backdrop-blur-sm transition-opacity duration-200 group-hover:opacity-100">
             {g.title}
           </span>
         </div>

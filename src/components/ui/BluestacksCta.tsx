@@ -1,48 +1,43 @@
 import { cn } from '@/lib/cn'
-import { Button } from './Button'
+import { HEADER_PILL } from './headerPill'
 
-// Cross-brand "BlueStacks by now.gg" download CTA. Part of the now.gg → BlueStacks
-// ad-serving experiment: it must be a REAL crawlable external anchor to bluestacks.com
-// (Button renders <a> when given `href`), opening in a new tab — NOT a JS button and
-// NOT the app-player download. One atom, four placements (TopBar · play hero · Footer ·
-// homepage band) so the brand treatment can't drift between them.
-//
-// Treatment is the SAME everywhere: outline (transparent + white-20 border + white
-// text). Pink stays reserved for Play CTAs (taste 2), so this never goes pink. The
-// BlueStacks mark is multi-color (white layers + now.gg-pink accent) → it ships as an
-// exported <img> asset, NOT the CSS-mask Icon (a mask would flatten it to one color —
-// codified 2026-06-11). The white layers need a dark/transparent bg, so no white fill.
+// Cross-brand "Download BlueStacks · by now.gg" CTA → bluestacks.com (the now.gg →
+// BlueStacks ad-serving experiment). A REAL crawlable external <a> (new tab), shown ONLY
+// in the TopBar. Brand lockup replicated 1:1 from the LIVE now.gg header (`sc-404ed2b-0`):
+// a white-10 pill (white-20 hairline + soft drop shadow), the full-color 32px BlueStacks
+// logo, and a two-line label — "Download BlueStacks" (15/700 white) over "by now" (11/500
+// white-70) + ".gg" (11/500 now.gg-pink). The pink ".gg" is the now.gg *wordmark tail*,
+// not a Play-CTA spotlight (taste-2's pink reservation governs clickable Play affordances).
+// The logo is multi-color → exported PNG asset, never a themed Icon mask.
+// (S8: the play-hero / footer / homepage-band placements were removed — header-only now.)
 const URL = 'https://www.bluestacks.com'
-const MARK = '/icons/now-gg/24/developer-resource-bluestacks.svg'
+const LOGO = '/bluestacks-logo.png' // official now.gg asset (96² @3x), scraped from live
 const LABEL = 'BlueStacks by now.gg'
 
-type Context = 'topbar' | 'hero' | 'footer' | 'band'
-
-const PRESET: Record<Context, { size: 'sm' | 'md' | 'lg'; shape: 'rounded' | 'pill'; mark: string; collapse?: boolean }> = {
-  topbar: { size: 'sm', shape: 'pill', mark: 'size-4', collapse: true },
-  hero: { size: 'md', shape: 'rounded', mark: 'size-5' },
-  footer: { size: 'sm', shape: 'pill', mark: 'size-4' },
-  band: { size: 'lg', shape: 'rounded', mark: 'size-5' },
-}
-
-export function BluestacksCta({ context, className }: { context: Context; className?: string }) {
-  const p = PRESET[context]
+export function BluestacksCta({ className }: { className?: string }) {
   return (
-    <Button
+    <a
       href={URL}
       target="_blank"
       rel="noopener noreferrer"
-      variant="outline"
-      size={p.size}
-      shape={p.shape}
-      aria-label={`Download ${LABEL}`}
-      className={cn('shrink-0', className)}
+      className={cn(
+        HEADER_PILL,
+        'justify-center gap-2.5 py-1 tracking-[0.2px] text-white',
+        className,
+      )}
     >
-      {/* multi-color brand mark → exported asset, not a themed Icon */}
+      {/* multi-color brand mark → exported PNG asset, not a themed Icon mask */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={MARK} alt="" aria-hidden className={cn('shrink-0', p.mark)} />
-      {/* anchor text stays in the DOM even when visually collapsed — crawlable */}
-      <span className={cn('whitespace-nowrap', p.collapse && 'hidden lg:inline')}>{LABEL}</span>
-    </Button>
+      <img src={LOGO} alt="" aria-hidden className="size-8 shrink-0" />
+      {/* full label always in DOM (accessible name + crawlable); two-line shown lg+ */}
+      <span className="sr-only">Download {LABEL}</span>
+      <span className="hidden flex-col lg:flex" aria-hidden>
+        <span className="text-[15px] font-bold leading-[16.5px]">Download BlueStacks</span>
+        <span className="text-[11px] font-medium leading-[12.1px]">
+          <span className="text-white-70">by now</span>
+          <span className="text-accent">.gg</span>
+        </span>
+      </span>
+    </a>
   )
 }

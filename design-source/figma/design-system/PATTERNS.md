@@ -29,7 +29,7 @@ Chrome icon controls.
 - **Used in:** PlayerControlBar (help · record · fullscreen).
 
 ### 5. Chip / pill
-- **Recipe:** chip `rounded-l border border-line bg-fill-subtle px-4 py-2.5` + `hover:border-line-strong hover:bg-fill-soft hover:text-text-primary`. Pills use `rounded-pill` (search bar, Button shape="pill", Remove-Ads gold pill). Category chips carry a per-category accent SVG.
+- **Recipe:** chip `rounded-r10 border border-line bg-fill-subtle px-4 py-2.5` + `hover:border-line-strong hover:bg-fill-soft hover:text-text-primary`. Pills use `rounded-pill` (search bar, Button shape="pill", Remove-Ads gold pill). Category chips carry a per-category accent SVG.
 - **Used in:** CategoryChips, SearchBar, Button.
 
 ### 6. Dot-divider meta row

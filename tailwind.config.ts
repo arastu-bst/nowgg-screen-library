@@ -52,6 +52,7 @@ const config: Config = {
           darkHover:'#e31776',  // Float Accent-Dark-Hover
         },
         gold: '#ffce47', // rating-badge star
+        'prime-gold': '#ffb03c', // nowPrime brand gold (wordmark "Prime" + the PRIME tag)
         secondary: '#e3dfec', // Float Base-50 — secondary button bg
         neutral:   '#565656', // Float Button/Disabled
 
@@ -124,8 +125,13 @@ const config: Config = {
       },
 
       // ─── Border radius — Float Radius scale + now.gg semantic names ──
+      // NOTE: never use single-letter SIDE keys (s · e · t · r · b · l) here — they
+      // collide with Tailwind's built-in rounded-{side} utilities (e.g. rounded-l =
+      // left corners, rounded-s = logical-start corners) and render an asymmetric
+      // radius. 6px was 's' (clashed with rounded-s) → 'r6'; 10px was 'l' (clashed
+      // with rounded-l) → 'r10'. 'm' (8px) is safe — 'm' is not a side keyword.
       borderRadius: {
-        'xxs': '2px', 'xs': '4px', 's': '6px', 'm': '8px', 'l': '10px', 'xxl': '16px',
+        'xxs': '2px', 'xs': '4px', 'r6': '6px', 'm': '8px', 'r10': '10px', 'xxl': '16px',
         'sm':     '4px',
         'tile':   '8px',  // game icon tiles
         'cta-sm': '6px',
@@ -135,11 +141,18 @@ const config: Config = {
         'pill':   '9999px',
       },
 
+      // ─── Border width — the now.gg 0.8px hairline (CTAs, panel border + dividers) ──
+      borderWidth: {
+        hair: '0.8px',
+      },
+
       // ─── Box shadow — live now.gg + Float effect styles ──
       boxShadow: {
         'card':  '0 4px 16px rgba(0,0,0,0.08)',
         'soft':  '0 2px 10px rgba(0,0,0,0.10)',
         'drop':  '0 4px 4px rgba(0,0,0,0.20)',
+        'pill':  '0 8px 16px rgba(0,0,0,0.10)',   // header brand pills (BluestacksCta, NowPrimeCta)
+        'plan-card': '0 8px 24px rgba(0,0,0,0.08)', // nowPrime plan cards (white-on-glass lift)
         'glow':  'inset 0 0 20px 0 rgba(255,0,148,1)',
         'glow-hover': '0 0 24px rgba(255,66,165,0.45)',
         // Float effect styles (Shadow/*)
@@ -185,6 +198,13 @@ const config: Config = {
         'widget-bar': 'linear-gradient(to right, #0fd4ff, #8865eb 29%)',
         'hero-scrim': 'linear-gradient(180deg, rgba(13,12,20,0.2) 0%, rgba(13,12,20,0.75) 70%, rgba(13,12,20,1) 100%)',
         'hero-scrim-x': 'linear-gradient(90deg, rgba(13,12,20,0.85) 0%, rgba(13,12,20,0.4) 55%, rgba(13,12,20,0) 100%)',
+        // collection-panel ("Football Fever") surface: a top magenta glow layered over the
+        // #111 surface-raised base (single bg-image so one class owns both — avoids the
+        // bg-color + bg-image utility clash).
+        'collection-glow': 'radial-gradient(120% 70% at 75% -5%, rgba(255,66,165,0.30) 0%, rgba(255,66,165,0.10) 28%, rgba(255,66,165,0) 55%), linear-gradient(#111111, #111111)',
+        // nowPrime popup brand gradients (scraped 1:1 from live now.gg)
+        'prime-hero': 'linear-gradient(98deg, #352f87 1.05%, #5c54c7 74.44%)',
+        'prime-badge': 'linear-gradient(270deg, #7b4cff 0%, #0ea4c5 99.48%)',
       },
 
       // ─── Letter spacing ──

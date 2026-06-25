@@ -6,14 +6,12 @@ import { GameStage } from '@/components/play/GameStage'
 import { AdSlot } from '@/components/play/AdSlot'
 import { FeaturedBand } from '@/components/play/FeaturedBand'
 import { Section } from '@/components/ui/Section'
-import { BluestacksBand } from '@/components/marketing/BluestacksBand'
 import { IconTileGrid } from '@/components/game/IconTileGrid'
-import { VideoClipCard } from '@/components/media/VideoClipCard'
 import { FeatureCard } from '@/components/media/FeatureCard'
 import { CategoryChips } from '@/components/category/CategoryChips'
 import { findPlayGame } from '@/lib/play'
 import { FEATURED } from '@/lib/featured'
-import { TOP_GAMES, MORE_GAMES, VIDEOS, BLOGS, TOP_PICKS, CATEGORIES, GAMES } from '@/lib/mock-data'
+import { TOP_GAMES, MORE_GAMES, BLOGS, TOP_PICKS, CATEGORIES, GAMES } from '@/lib/mock-data'
 
 // Single game-player page (design handoff): opens for ANY game tile (slug-aware
 // branding). Layout mirrors live now.gg/apps/.../little-alchemy-2:
@@ -53,14 +51,6 @@ export default function PlayPage({ params }: { params: { slug: string } }) {
 
         {/* ── Remaining sections ── live order + headings ── */}
         <div className="mx-auto max-w-content space-y-10 px-4 py-10 md:px-6">
-          <Section title="Video Clips" action="View All">
-            <div className="grid grid-cols-cards-mobile gap-5 md:grid-cols-cards">
-              {VIDEOS.map((v) => (
-                <VideoClipCard key={v.id} video={v} />
-              ))}
-            </div>
-          </Section>
-
           <Section title="Blogs" action="View All">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {BLOGS.map((a) => (
@@ -77,16 +67,13 @@ export default function PlayPage({ params }: { params: { slug: string } }) {
             </div>
           </Section>
 
-          <Section title="More Games" moreLabel="Show More">
+          <Section title="More Games">
             <IconTileGrid games={MORE_GAMES} />
           </Section>
 
           <Section title="Explore by Categories" action="View All">
             <CategoryChips categories={CATEGORIES} />
           </Section>
-
-          {/* BlueStacks promo band — same contained card as the homepage (now.gg → BlueStacks ad experiment) */}
-          <BluestacksBand />
         </div>
 
         {/* ── Footer with its breadcrumb bar (live: trail is the footer's first row) ── */}

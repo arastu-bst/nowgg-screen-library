@@ -1,6 +1,7 @@
 # now.gg — Knowledge Base
-Last updated: 2026-06-11 (session 6 audit — CloseGlyph extracted (Gate 3 at 4); profile
-stat-chip anatomy + icon-vs-illustration render rule codified)
+Last updated: 2026-06-25 (S7+S8 audit — BlueStacks header CTA, CollectionPanel/GameListRow,
+nowPrime popup+CTA+provider, shared CloseButton, frosted-popup pattern, tokens + side-key rule
++ S8 follow-up: cn() made design-system-aware after the border-hair token dropped strokes)
 
 > now.gg's reusable components, patterns, and token hygiene. Format mirrors the
 > WSUP knowledge-base convention (each entry: what it is · when to use ·
@@ -107,5 +108,74 @@ Radii: sm r6 · md r8 · lg/xl r12 · pill full. Impl: `src/components/ui/Button
   only alpha and would flatten the colors. The stat badges (`game-cards`/`gold-cauldron`)
   are exported assets, NOT `Icon` names. **Pre-flight:** before rendering, ask "one color
   or many?" and verify it actually renders (the S5 stat icons 404'd at size 32 → invisible).
+
+## Components + patterns (S7–S8)
+- `BluestacksCta` (ui/) — header-only cross-brand pill (white-10 + 0.8px white-20 + soft
+  shadow, rounded-pill); 32px BlueStacks logo + two-line label ("Download BlueStacks" 15/700
+  white over "by now" white-70 + ".gg" accent). A real crawlable `<a href=bluestacks.com>`;
+  `sr-only` full label + visible two-line shown `lg+`. **Codified S8.** *(S7's 4-preset
+  `context` API + `BluestacksBand` were removed at S8 — header-only now.)*
+- `CollectionPanel` + `GameListRow` (game/) — homepage "Football Fever" card: bordered
+  surface (`bg-collection-glow` over #111, 0.8px accent border, `rounded-xxl`), 50px header
+  (title `text-base`/700 + animated `ai-star.gif` + "View all" `text-2xs`/white-70 + chevron,
+  `border-b-[0.8px] border-line`), list of 80px rows (icon `rounded-card` clipped + hover
+  zoom + `bg-white-05` hover container; title `text-sm`/white-80 clamp-2; rating pill
+  `black-20 rounded-m` + gold star + `toFixed(1)`). xl rail caps the list
+  `xl:max-h-[calc(100vh-156px)] xl:overflow-y-auto`. Data: `lib/collections.ts`. **Codified S8.**
+- `NowPrimePopup` (play/) — the nowPrime upsell gate (purple `bg-prime-hero` top + looping
+  `now-prime-bg.mp4` wash + logo/wordmark + 4 perks; white-20 plan cards; Best Value = absolute
+  `bg-prime-badge` pill, white/700/UPPERCASE/0.5px). Buy → `useNowPrime().subscribe()`. **Codified S8.**
+- `NowPrimeCta` (ui/) — header nowPrime pill (mirrors BluestacksCta chrome) → opens the popup.
+- `PlayFlowToggler` (play/) — portaled bottom-right dev state-selector (Launch · nowPrime · Ad ·
+  Loading · Playing); design-handoff control, not product chrome.
+- `NowPrimeProvider` (providers/) — root-layout context `{ isPrime, subscribe, cancel }` (design-
+  only, resets on refresh). `HeaderLogo` (shell/) reads it → normal logo vs PRIME lockup.
+- `CloseButton` (ui/) — **the shared popup close** (Gate-3, 3 consumers: NowPrimePopup,
+  HelpSupportModal, RunDiagnosticModal): 20px CloseGlyph in a 36px `rounded-full` hit target,
+  white-70 → white + `bg-white-10` hover container. **Pre-flight:** never hand-roll a popup close
+  again — import `CloseButton` (position via className).
+
+## Frosted-popup pattern (CANONICAL — codified S8; 4 consumers)
+A frosted-glass popup = a SEPARATE `absolute inset-0 bg-black-70` scrim **sibling** (no blur,
+onClick close) + `backdrop-blur-2xl` on the **panel itself** (`bg-white-20`). Consumers:
+HelpSupportModal, RunDiagnosticModal, ProfileSidebar, NowPrimePopup. **Anti-pattern that FAILS:**
+putting the scrim as the *container's background* and the blur on a *child inside an
+`overflow-hidden` wrapper* — the blur then has nothing real to sample and reads as invisible
+(the S8 nowPrime blur fight). **Pre-flight:** copy a working sibling's structure verbatim.
+
+## Tokens (S8)
+- `prime-gold #ffb03c` (color) — nowPrime brand gold (wordmark "Prime" + PRIME tag). bg-gradients
+  `prime-hero`, `prime-badge`, `collection-glow`. **Pre-flight:** restart dev server after any
+  `tailwind.config.ts` token edit (JIT won't HMR-pick-up).
+- `border-hair` (borderWidth 0.8px) — the now.gg hairline (header pills, panel border + dividers).
+  `shadow-pill` (header brand pills) · `shadow-plan-card` (nowPrime plan cards). All in
+  `tailwind.config.ts`; documented in /style-guide → Scales + Colors.
+- `HEADER_PILL` (ui/headerPill.ts) — shared chrome string for the two header brand pills
+  (BluestacksCta · NowPrimeCta); each adds its own gap/py. **Pre-flight:** new header pill → reuse it.
+- **Style-guide previews of INTERACTIVE components need a `'use client'` wrapper.** The section
+  files (ComponentsSection/PatternsSection) are Server Components — passing a function prop
+  (e.g. `onClose={() => {}}`) to a client component from there hangs SSG ("functions can't be
+  passed to Client Components" → /style-guide static-generation TIMEOUT). Wrap the demo in a
+  client preview (PopupPreview · ProfileSidebarPreview · NowPrimePopupPreview · CloseButtonPreview).
+  **`next build` catches this; `tsc` does NOT — always build before declaring done.**
+- **One-offs (NOT tokenized — exact-1:1-now.gg replication / structural):** the BlueStacks lockup
+  type (`text-[15px]`/`leading-[16.5px]`/`text-[11px]`), the PRIME crop-window geometry, popup
+  widths (`max-w-[460px]`), `h-[50px]` header, the rail `calc()` cap. Same principled Gate-1
+  exception as the IAB ad sizes / 132px icon — snapping them to tokens breaks the pixel match.
+- **CONFIG RULE — never use single-letter side-keyword radius keys** (`s·e·t·r·b·l`): they
+  collide with Tailwind's built-in `rounded-{side}` utilities → asymmetric radii. Use `r6`/`r10`/
+  named keys. (S8: `l`→`r10`, `s`→`r6` after `rounded-l` rendered 4/10/10/4.)
+- **`cn()` is DESIGN-SYSTEM-AWARE — mirror every custom Tailwind key in it (codified S8 follow-up).**
+  `src/lib/cn.ts` extends tailwind-merge (`extendTailwindMerge`) with our custom scale keys (border
+  width `hair`, the named radii / shadows / bg-gradients). WITHOUT this, tailwind-merge mis-buckets a
+  custom non-numeric key and SILENTLY DROPS it: `border-hair` was read as a border-*colour*, dropped
+  against `border-white-20` / `border-accent`, and the hairline computed to **0px** — every now.gg
+  stroke vanished (designer caught "the strokes are gone, why?"). `border-[0.8px]` never had this
+  (twMerge parses arbitrary lengths). **Pre-flight:** (1) any new custom key in `tailwind.config.ts`
+  (borderWidth/borderRadius/boxShadow/backgroundImage) → add it to the matching group in `cn.ts` the
+  SAME edit; (2) after any raw→token migration, verify the computed value on a REAL consumer in the
+  running app, NOT a `/style-guide` swatch — the swatch uses a plain string (no `cn()`) so it can't
+  surface the drop. Widest-risk case = two classes setting DIFFERENT css props meant to COEXIST
+  (width+colour, gradient+bg-colour).
 
 *(Real codified entries accumulate here as components are built and corrected.)*

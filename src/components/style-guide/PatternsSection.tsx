@@ -7,7 +7,11 @@ import { Button } from '@/components/ui/Button'
 import { StarIcon, ChevronRight } from '@/components/ui/icons'
 import { PopupPreview } from './PopupPreview'
 import { ProfileSidebarPreview } from './ProfileSidebarPreview'
-import { GAMES, POSTERS } from '@/lib/mock-data'
+import { NowPrimePopupPreview } from './NowPrimePopupPreview'
+import { CollectionPanel } from '@/components/game/CollectionPanel'
+import { cn } from '@/lib/cn'
+import { GAMES, POSTERS, ASSETS } from '@/lib/mock-data'
+import { FOOTBALL_FEVER } from '@/lib/collections'
 
 // The now.gg pattern kit — recurring COMPOSITIONS (not individual components). Each
 // card: a live example + the token/class recipe + where it's used. Full catalog in
@@ -48,8 +52,8 @@ export function PatternsSection() {
         </div>
       </Pattern>
 
-      <Pattern name="Chip / pill" recipe="chip: rounded-l border-line bg-fill-subtle · pill: rounded-pill · hover: border-line-strong + bg-fill-soft" used="CategoryChips · SearchBar · Button (pill)">
-        <span className="flex items-center gap-2 rounded-l border border-line bg-fill-subtle px-4 py-2.5 text-sm text-text-secondary">Browser Games</span>
+      <Pattern name="Chip / pill" recipe="chip: rounded-r10 border-line bg-fill-subtle · pill: rounded-pill · hover: border-line-strong + bg-fill-soft" used="CategoryChips · SearchBar · Button (pill)">
+        <span className="flex items-center gap-2 rounded-r10 border border-line bg-fill-subtle px-4 py-2.5 text-sm text-text-secondary">Browser Games</span>
         <Button shape="pill" size="sm">Pill button</Button>
       </Pattern>
 
@@ -87,8 +91,45 @@ export function PatternsSection() {
         />
       </Pattern>
 
-      <Pattern name="Popups (glass)" recipe="white-20 frosted panel + backdrop-blur · ALWAYS black-70 scrim · header + X · inputs use Float Forms states (default white-50 → hover white-70 → focus accent)" used="player help icon → Run Diagnostic; Help & Support kept for reference">
+      <Pattern name="Popups (glass) — CANONICAL frosted-popup structure" recipe="a SEPARATE absolute inset-0 bg-black-70 scrim SIBLING (no blur, onClick close) + backdrop-blur-2xl on the white-20 PANEL itself — NOT scrim-as-container-bg with the blur on a child inside overflow-hidden (that reads invisible). Header + CloseButton · inputs use Float Forms states (white-50 → white-70 → focus accent)" used="Run Diagnostic · Help & Support · Profile sidebar · nowPrime popup">
         <PopupPreview />
+      </Pattern>
+
+      <Pattern name="Collection panel (Football Fever)" recipe="bordered card: bg-collection-glow (#111 + top magenta radial) · border-hair border-accent · rounded-xxl · 50px header (title text-base/700 + animated ai-star.gif + 'View all' + chevron, border-b-hair) · vertical GameListRows. Placed as a STICKY xl right rail (aside xl:w-[286px] · sticky top-6 · list xl:max-h-[calc(100vh-156px)] overflow-y-auto); inline below xl." used="homepage right rail (+ inline on mobile)">
+        <div className="w-[260px]"><CollectionPanel title="Football Fever" href="/" games={FOOTBALL_FEVER.slice(0, 3)} /></div>
+      </Pattern>
+
+      <Pattern name="nowPrime upsell popup (frosted)" recipe="purple bg-prime-hero top + looping now-prime-bg.mp4 wash (opacity-20 mix-blend-lighten) + logo/wordmark + 4 perks (green tick) · white-20 bottom: 3 plan cards (shadow-plan-card) · Best Value = absolute bg-prime-badge pill · CloseButton · uses the canonical frosted structure above · Buy → useNowPrime().subscribe()" used="header NowPrimeCta · /play flow toggler · 'Play in Browser' gate">
+        <NowPrimePopupPreview />
+      </Pattern>
+
+      <Pattern name="PRIME header lockup (after subscribe)" recipe="once nowPrime'd, HeaderLogo crops the ONE combined now.gg SVG into two overflow-hidden windows (dot + wordmark) so a gold 'PRIME' (text-prime-gold, tracking-[0.3em]) sits 2px under the WORDMARK, dot vertically centered against the now.gg+PRIME block. Default = plain logo (no PRIME)." used="TopBar after a Buy">
+        <div className="flex items-center gap-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={ASSETS.logo} alt="now.gg" className="h-9 w-auto" />
+          <span className="self-end pb-1 text-[10px] font-extrabold uppercase leading-none tracking-[0.3em] text-prime-gold">Prime</span>
+        </div>
+        <span className="text-2xs text-text-muted">← representative; the live lockup crops the combined SVG (see HeaderLogo)</span>
+      </Pattern>
+
+      <Pattern name="Flow toggler (dev control)" recipe="fixed bottom-right, portaled to <body>, z-70 · pill rail of player states · active = bg-accent · a design-handoff control to DEMO states, never product chrome (lives outside the design surface)" used="/play (Launch · nowPrime · Ad · Loading · Playing)">
+        <div className="inline-flex items-center gap-1 rounded-pill border border-white-10 bg-black-80 p-1 shadow-fl-lg">
+          <span className="px-2 text-3xs font-semibold uppercase tracking-wide text-white-50">Flow</span>
+          {['Launch', 'nowPrime', 'Ad', 'Loading', 'Playing'].map((s, i) => (
+            <span key={s} className={cn('rounded-pill px-3 py-1 text-2xs font-medium', i === 1 ? 'bg-accent text-white' : 'text-white-60')}>{s}</span>
+          ))}
+        </div>
+      </Pattern>
+
+      <Pattern name="Header pill chrome (HEADER_PILL)" recipe="inline-flex items-center rounded-pill border-hair border-white-20 bg-white-10 px-3 shadow-pill hover:bg-white-20 — shared so the two header pills can't drift; each adds its own gap/py/content" used="BluestacksCta · NowPrimeCta (live in Components)">
+        <span className="inline-flex items-center gap-2 rounded-pill border-hair border-white-20 bg-white-10 px-3 py-2 text-2xs text-white shadow-pill">white-10 glass pill</span>
+      </Pattern>
+
+      <Pattern name="Hover container (bounding area)" recipe="absolute span behind the content: -inset-x-2 -inset-y-1 rounded-card bg-white-05 opacity-0 group-hover:opacity-100 — a soft highlight that bleeds into the surrounding padding; content sits relative above it" used="GameListRow (Football Fever rows) · same idea as the CloseButton hover">
+        <div className="group relative inline-flex px-2 py-1">
+          <span className="pointer-events-none absolute -inset-x-2 -inset-y-1 rounded-card bg-white-10 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
+          <span className="relative text-2xs text-text-secondary">← hover for the container</span>
+        </div>
       </Pattern>
 
       <Pattern name="Profile sidebar (glass drawer)" recipe="right drawer portaled to <body> (escapes TopBar's backdrop-blur containing block) · white-20 frosted panel + backdrop-blur · ALWAYS black-70 scrim (taste 13) · slide-in via translate-x · close/help notch buttons OUTSIDE the left edge, gated on open · inner chips bg-black-20 on the glass" used="TopBar avatar → every page">

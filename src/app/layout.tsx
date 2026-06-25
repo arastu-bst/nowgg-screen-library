@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { NowPrimeProvider } from '@/components/providers/NowPrimeProvider'
 
 export const metadata: Metadata = {
   title: 'now.gg — design handoff',
@@ -20,7 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen bg-page-bg text-text-primary antialiased">{children}</body>
+      <body className="min-h-screen bg-page-bg text-text-primary antialiased">
+        <NowPrimeProvider>{children}</NowPrimeProvider>
+      </body>
     </html>
   )
 }

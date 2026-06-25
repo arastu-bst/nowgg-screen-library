@@ -1,5 +1,5 @@
 # now.gg — Taste
-Last updated: 2026-06-11 (session 6 — rules 15–17 added: pinned-chrome boundary, edge-anchored-squares-corners, no-duplicate-identity-in-header)
+Last updated: 2026-06-25 (S8 audit — rule 18 added: brand wordmarks/marks keep their brand color; rule-2 pink-reservation is interactive-only)
 
 > This file is now.gg's design *language* and the designer's corrections — NOT
 > token specs (those live in `tailwind.config.ts` + `/style-guide`). It captures
@@ -120,6 +120,13 @@ square-cornered and rendered at their exact IAB size, centered — never stretch
     Avatar in the drawer header + avatar in the profile row directly below = a
     duplicate signal; the header is title-only. Same family as the WSUP
     "two warning icons close together" catch — one signal per concept per surface.
+
+18. **Brand wordmarks/marks keep their brand color — rule 2's pink-reservation is about
+    interactive Play affordances, not identity.** The ".gg" in a now.gg / "by now.gg"
+    lockup and the gold in the nowPrime wordmark carry their brand color *wherever* they
+    appear. Rule 2 only stops *new* pink from competing with Play CTAs / active state — it
+    never desaturates the brand mark itself. (S8: the pink ".gg" tail on the BlueStacks
+    header CTA, and the gold "PRIME", are correct — not taste-2 violations.)
 
 ## Open corrections log
 *(Sessions 2 + 4 corrections promoted above. S5 corrections promoted to rule 13 +

@@ -3,6 +3,83 @@
 
 ---
 
+## Session 8 — 2026-06-25 — now.gg homepage/play overhaul + S7+S8 audit
+**Built:** BlueStacks CTA → live header lockup, then header-only (BluestacksBand deleted) ·
+"Football Fever" `CollectionPanel` + sticky right-rail · removed Show-More + short-videos sections ·
+nowPrime popup (1:1) + `/play` flow toggler + subscribe→PRIME-logo flow (`NowPrimeProvider`) ·
+shared `CloseButton` · rounded side-key bug (`l`→`r10`, `s`→`r6`) · `Button` reverted to button-only.
+**designer_caught_count: 6** — recurring: *copy the working sibling's structure first* (the
+frosted-popup blur fiasco = the WSUP S33–S36 precedent-grep gap, now on now.gg) + exact-match
+scrape fidelity (leaf-not-container; check natural asset size before upscaling). Phase still 2.
+**Audit:** tsc 0 · next build green (5/5) · Button orphan removed · 0 dead refs · scratchpad
+(30 rows, S7+S8) promoted → decisions/taste/KB/reasonings/insights + wiped.
+**Gate 1/3/5 follow-up (same day): DONE** — tokenized `border-hair` + `shadow-pill` +
+`shadow-plan-card`, extracted the shared `HEADER_PILL` chrome, and synced every new
+colour/gradient/shadow/border/component/pattern into `/style-guide`. Exact-replication values
+kept as documented one-offs. **`next build` CAUGHT a regression tsc missed** — a function prop
+(`onClose`) passed from a Server section to CloseButton hung /style-guide SSG; fixed with a
+`CloseButtonPreview` client wrapper. Final: tsc 0 · build green (5/5) · /style-guide renders, 0
+console errors, border-hair computes 0.8px.
+**S8 follow-up #2 (same day) — token-migration regression caught + fixed:** the `border-[0.8px]`→`border-hair`
+migration silently DROPPED the stroke on every `cn()`-built component (header pills + CollectionPanel) — designer
+caught "the strokes are gone now, why?". Root cause: tailwind-merge mis-buckets the custom non-numeric width key as
+a *colour* and drops it; the `/style-guide` swatch (plain string, no `cn()`) showed 0.8px and HID the bug. Fix:
+`extendTailwindMerge` in `cn.ts` mirroring ALL custom scale keys (width/radius/shadow/bg-gradient). Verified live
+(0 drops / 1144 els), tsc 0, build green (5/5). **+1 designer-caught (verify-the-real-consumer Gate-8 miss)** —
+recurring family: check the real rendered result, not the convenient artifact (the swatch).
+**Files updated:** decisions · taste · knowledge-base · project-insights · reasonings (shared) ·
+evolution · this log · `src/lib/cn.ts`.
+
+---
+
+## Session 7 — 2026-06-16 — "BlueStacks by now.gg" cross-brand CTA (4 placements + app-page band), shipped
+Bootstrap: read all 6 notebook files on first now.gg touch ✓ (CTA build request).
+Freshness check: taste ✓ (no change — applied rules 2,16) | decisions ✓ (no inline write — dual-cadence) |
+knowledge-base ✓ | project-insights ✓ | reasonings ✓ | evolution (pending audit) |
+session-logs ✓ (this entry) | scratchpad ✓ (8 pending rows — NOT promoted; audit not triggered).
+
+**Context:** BlueStacks/now.gg ad experiment with Aditude — serving now.gg ads in the BlueStacks
+App Player needs a visible now.gg → bluestacks.com brand link. Task: a "BlueStacks by now.gg"
+download CTA on the homepage + app pages that OPENS bluestacks.com (not the app-player download).
+
+**designer_caught_count: 1**
+1. "full width" misread — built a true edge-to-edge `fullBleed` band variant for the app page;
+   designer meant "the homepage banner, on the app page too" ("like homepage only"). Reverted +
+   removed the dead fullBleed mode. A requirements/ambiguous-descriptor miss — NOT a taste-9 /
+   authoritative-source recurrence. The WATCHED category did NOT recur; 0 hand-drawn-glyph misses;
+   correctly applied the multi-color-mark-as-`<img>` rule + pink-reservation. Phase-3-POSITIVE
+   (count 5→1). Learning logged → reasonings at audit: confirm ambiguous descriptors against the
+   referenced element before building.
+
+**What built/changed:**
+- NEW `ui/BluestacksCta.tsx` — one atom, REAL crawlable `<a href=bluestacks.com target=_blank
+  rel=noopener>` (experiment needs a crawlable link, not a JS button); 4 presets.
+- `ui/Button.tsx` made polymorphic (`<a>` when given `href`).
+- 4 placements (designer picked all): TopBar pill (glyph-only <lg, label stays in DOM = crawlable),
+  play-hero (outline, under "Play in Browser"), Footer (both pages), homepage band.
+- NEW `marketing/BluestacksBand.tsx` — contained rounded white-10 "Play even bigger on PC" band;
+  added to BOTH homepage (mid-catalog) and app/play page (after Explore by Categories), identical.
+- Outline treatment everywhere, never pink (taste 2); mark as `<img>` not Icon mask (multi-color,
+  codified 2026-06-11); homepage band contained b/c AppShell is one constrained column.
+
+**Verify:** `tsc --noEmit` 0; `next build` GREEN ×2 (5/5 routes); 0 console errors. DOM-verified at
+1440 + 390 (screenshots WEDGE — autoplay video stalls headless capture → used preview_eval + showed
+designer via Claude-in-Chrome). No TopBar overflow; band bandW 1272 / 12px radius identical on both pages.
+
+**Shipped → arpityadav-bst/nowgg-screen-library main → nowgg-screen-library.vercel.app (auto-deploy):**
+`23b147d` (CTA ×4) + `625197d` (app-page band).
+
+**AUDIT NOT RUN** (designer offered + deferred → said BYE). Scratchpad holds 8 pending rows incl. a
+Gate 5 flag. **Watching for next session:**
+1. **RUN THE VDA AUDIT** — promote scratchpad → decisions.md; Gate 5: BluestacksCta → Components
+   showcase + BluestacksBand → Patterns entry + NAV rows in style-guide/page.tsx; promote the
+   ambiguous-descriptor learning → reasonings; generalize; wipe scratchpad; build + (style-guide is
+   deployable → push after).
+2. **Copy sign-off:** "BlueStacks by now.gg" is the reverse of the usual "now.gg by BlueStacks"
+   lockup — built as specified; flag for brand team before real now.gg ships.
+
+---
+
 ## Session 6 — 2026-06-11 — Profile sidebar Figma-accuracy + polish, shipped to Vercel, full audit
 Bootstrap: read all 6 notebook files on first now.gg touch ✓ (design-review request).
 Freshness check: taste ✓ (bumped, rules 15–17) | decisions ✓ (bumped, 7 rows) |
