@@ -22,17 +22,6 @@ export function TopBar() {
         <BluestacksCta />
         {/* logged-in user avatar → opens the Profile sidebar (Figma User-Profile 26500:133019) */}
         <ProfileMenu />
-        <span className="h-5 w-px shrink-0 bg-line-strong" aria-hidden />
-        {/* Ana AI assistant widget — autoplaying looped video */}
-        <video
-          src="/ana-exp.webm"
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-label="Ana assistant"
-          className="size-14 shrink-0 rounded-pill object-cover"
-        />
       </div>
     </header>
   )
