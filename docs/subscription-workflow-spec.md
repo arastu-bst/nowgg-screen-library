@@ -3,6 +3,7 @@
 **Status:** design complete (in the screen-library replica); ready for production wiring.
 **Surface:** the `nowPrime` upsell + a new subscription/management flow.
 **Codebase:** `nowgg-screen-library` (Next.js 14 · React 18 · Tailwind · TypeScript).
+**Live demo:** https://nowgg-screen-library-dun.vercel.app/ (open the `nowPrime` pill in the top bar, or the avatar → Subscriptions).
 
 This spec describes the subscription experience built in the design replica and what the
 production implementation must add. The replica is **UI/UX only** — no real payments, auth,
