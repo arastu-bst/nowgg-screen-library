@@ -41,13 +41,6 @@ export function Coin() {
           <path d={SPARKLE} fill="url(#np-coin-dg)" />
         </svg>
       </div>
-      {/* shine sweep — clipped to the coin */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
-        <div
-          className="np-coin-glint absolute -inset-y-2 left-0 w-[38%]"
-          style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,.85), transparent)' }}
-        />
-      </div>
     </div>
   )
 }
