@@ -77,3 +77,13 @@
   .line-clamp-1 { -webkit-line-clamp: 1; }
   .line-clamp-2 { -webkit-line-clamp: 2; }
 }
+
+/* nowPrime premium coin — a diagonal highlight that sweeps across to catch the eye. */
+@keyframes np-coin-glint {
+  0% { transform: translateX(-220%) skewX(-18deg); }
+  55%, 100% { transform: translateX(340%) skewX(-18deg); }
+}
+.np-coin-glint { animation: np-coin-glint 3.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .np-coin-glint { animation: none; }
+}
