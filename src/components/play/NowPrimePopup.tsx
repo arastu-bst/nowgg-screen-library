@@ -32,11 +32,12 @@ export function NowPrimePopup({ onClose }: { onClose: () => void }) {
   const confirm = () => { if (selected) subscribe(selected); setStep('done') }
 
   return createPortal(
-    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-black-70" onClick={onClose} aria-hidden />
+    <div className="fixed inset-0 z-[60] overflow-y-auto" onClick={onClose}>
+      <div className="fixed inset-0 bg-black-70" aria-hidden />
+      <div className="relative flex min-h-full items-center justify-center p-4">
       <div className="relative z-10 w-full max-w-[460px] overflow-hidden rounded-card shadow-fl-lg backdrop-blur-2xl" onClick={(e) => e.stopPropagation()}>
         {/* ── TOP: purple gradient + animated wash + logo/wordmark + perks ── */}
-        <div className="relative overflow-hidden bg-prime-hero px-8 py-5">
+        <div className="relative overflow-hidden bg-prime-hero px-5 py-5 sm:px-8">
           <video
             src="/now-prime-bg.mp4"
             autoPlay loop muted playsInline aria-hidden
@@ -66,13 +67,14 @@ export function NowPrimePopup({ onClose }: { onClose: () => void }) {
         </div>
 
         {/* ── BOTTOM: white-20 (wrapper backdrop-blur shows through) ── */}
-        <div className="bg-white-20 px-8 pb-6 pt-4">
+        <div className="bg-white-20 px-5 pb-6 pt-4 sm:px-8">
           {step === 'select' && <SelectStep onChoose={choose} />}
           {step === 'checkout' && selected && (
             <CheckoutStep plan={selected} onBack={() => setStep('select')} onConfirm={confirm} />
           )}
           {step === 'done' && selected && <DoneStep plan={selected} onClose={onClose} />}
         </div>
+      </div>
       </div>
     </div>,
     document.body,
@@ -84,12 +86,12 @@ function SelectStep({ onChoose }: { onChoose: (p: Plan) => void }) {
   return (
     <>
       <p className="text-sm font-semibold text-white-70">Choose your plan</p>
-      <div className="mt-4 flex items-stretch gap-3">
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-stretch">
         {PLANS.map((pl) => (
           <div
             key={pl.id}
             className={cn(
-              'relative flex flex-1 flex-col items-center rounded-m bg-white px-3 pb-3 pt-4 text-center shadow-plan-card',
+              'relative flex w-full flex-col items-center rounded-m bg-white px-3 pb-3 pt-4 text-center shadow-plan-card sm:w-auto sm:flex-1',
               pl.best && 'ring-2 ring-prime-gold',
             )}
           >
