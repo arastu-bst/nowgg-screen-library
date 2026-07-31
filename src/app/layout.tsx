@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { NowPrimeProvider } from '@/components/providers/NowPrimeProvider'
+import { DevicePreview } from '@/components/demo/DevicePreview'
 
 export const metadata: Metadata = {
   title: 'now.gg — design handoff',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           renders reliably for dev handoff (offline / firewalled / Google-Fonts-blocked). */}
       <body className="min-h-screen bg-page-bg text-text-primary antialiased">
         <NowPrimeProvider>{children}</NowPrimeProvider>
+        <DevicePreview />
       </body>
     </html>
   )
