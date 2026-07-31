@@ -5,6 +5,7 @@ import { cn } from '@/lib/cn'
 import { useNowPrime } from '@/components/providers/NowPrimeProvider'
 import { PERKS, PLANS, REGION_NOTE, type Plan } from '@/lib/now-prime'
 import { Coin, GoldCheck, GiftIcon, DiamondGold, Check } from './NowPrimeArt'
+import { Offerwall } from './offerwall/Offerwall'
 
 // nowPrime subscription workflow — dark/gold modal, portaled to <body> (scroll-safe). Header
 // band = coin + benefits hero. Body swaps per step:
@@ -112,11 +113,12 @@ function SelectStep({ onChoose }: { onChoose: (p: Plan) => void }) {
 }
 
 function OfferwallCta() {
+  const [open, setOpen] = useState(false)
   return (
-    <button
+    <>
+      <button
       type="button"
-      // TODO: open the Torox offerwall (earn nowBux by completing offers) — flow TBD
-      onClick={() => {}}
+      onClick={() => setOpen(true)}
       className="relative flex w-full items-center gap-3.5 rounded-[17px] px-[18px] py-[15px] text-left transition-transform hover:-translate-y-px active:translate-y-px"
       style={{
         background: 'linear-gradient(180deg,#fff0b8 0%,#ffd65e 44%,#f0a52a 100%)',
@@ -141,7 +143,9 @@ function OfferwallCta() {
         className="ml-auto flex size-[30px] flex-none items-center justify-center rounded-full text-[17px] font-black text-white"
         style={{ background: 'linear-gradient(180deg,#3a2b0a,#241a06)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,.2), 0 3px 6px rgba(0,0,0,.3)' }}
       >→</span>
-    </button>
+      </button>
+      {open && <Offerwall onClose={() => setOpen(false)} />}
+    </>
   )
 }
 
